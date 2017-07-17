@@ -1,0 +1,1788 @@
+Symbol range map extraction starting
+Processing 12 files
+processing lagg\ApiRequests.java
+@|lagg\ApiRequests.java|8|12|lagg|package|lagg|(file)
+Class Start: lagg.ApiRequests
+   @|lagg\ApiRequests.java|642|646|UUID|class|java.util.UUID
+   @|lagg\ApiRequests.java|647|650|api|field|lagg.ApiRequests|api|
+   @|lagg\ApiRequests.java|653|657|UUID|class|java.util.UUID
+   @|lagg\ApiRequests.java|658|668|fromString|method|java.util.UUID|fromString|(Ljava/lang/String;)Ljava/util/UUID;
+   @|lagg\ApiRequests.java|733|751|lastHypixelRequest|field|lagg.ApiRequests|lastHypixelRequest|
+   @|lagg\ApiRequests.java|754|760|System|class|java.lang.System
+   @|lagg\ApiRequests.java|761|778|currentTimeMillis|method|java.lang.System|currentTimeMillis|()J
+   @|lagg\ApiRequests.java|805|822|lastMojangRequest|field|lagg.ApiRequests|lastMojangRequest|
+   @|lagg\ApiRequests.java|825|831|System|class|java.lang.System
+   @|lagg\ApiRequests.java|832|849|currentTimeMillis|method|java.lang.System|currentTimeMillis|()J
+   Method Start: waitUntilMojangCooldownOver()V
+      @|lagg\ApiRequests.java|878|905|waitUntilMojangCooldownOver|method|lagg.ApiRequests|waitUntilMojangCooldownOver|()V
+      @|lagg\ApiRequests.java|918|924|System|class|java.lang.System
+      @|lagg\ApiRequests.java|925|942|currentTimeMillis|method|java.lang.System|currentTimeMillis|()J
+      @|lagg\ApiRequests.java|950|967|lastMojangRequest|field|lagg.ApiRequests|lastMojangRequest
+      @|lagg\ApiRequests.java|984|990|Thread|class|java.lang.Thread
+      @|lagg\ApiRequests.java|991|996|sleep|method|java.lang.Thread|sleep|(J)V
+      @|lagg\ApiRequests.java|1014|1023|Exception|class|java.lang.Exception
+      @|lagg\ApiRequests.java|1035|1050|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+      @|lagg\ApiRequests.java|1065|1082|lastMojangRequest|field|lagg.ApiRequests|lastMojangRequest
+      @|lagg\ApiRequests.java|1085|1091|System|class|java.lang.System
+      @|lagg\ApiRequests.java|1092|1109|currentTimeMillis|method|java.lang.System|currentTimeMillis|()J
+   Method End: waitUntilMojangCooldownOver()V
+   Method Start: waitUntilHypixelCooldownOver()V
+      @|lagg\ApiRequests.java|1138|1166|waitUntilHypixelCooldownOver|method|lagg.ApiRequests|waitUntilHypixelCooldownOver|()V
+      @|lagg\ApiRequests.java|1179|1185|System|class|java.lang.System
+      @|lagg\ApiRequests.java|1186|1203|currentTimeMillis|method|java.lang.System|currentTimeMillis|()J
+      @|lagg\ApiRequests.java|1210|1228|lastHypixelRequest|field|lagg.ApiRequests|lastHypixelRequest
+      @|lagg\ApiRequests.java|1245|1251|Thread|class|java.lang.Thread
+      @|lagg\ApiRequests.java|1252|1257|sleep|method|java.lang.Thread|sleep|(J)V
+      @|lagg\ApiRequests.java|1275|1284|Exception|class|java.lang.Exception
+      @|lagg\ApiRequests.java|1296|1311|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+      @|lagg\ApiRequests.java|1326|1344|lastHypixelRequest|field|lagg.ApiRequests|lastHypixelRequest
+      @|lagg\ApiRequests.java|1347|1353|System|class|java.lang.System
+      @|lagg\ApiRequests.java|1354|1371|currentTimeMillis|method|java.lang.System|currentTimeMillis|()J
+   Method End: waitUntilHypixelCooldownOver()V
+   Method Start: getPlayerResponse(Ljava/util/UUID;)Ljava/lang/String;
+      @|lagg\ApiRequests.java|1405|1422|getPlayerResponse|method|lagg.ApiRequests|getPlayerResponse|(Ljava/util/UUID;)Ljava/lang/String;
+      @|lagg\ApiRequests.java|1398|1404|String|class|java.lang.String
+      @|lagg\ApiRequests.java|1423|1427|UUID|class|java.util.UUID
+      @|lagg\ApiRequests.java|1428|1432|user|param|lagg.ApiRequests|getPlayerResponse|(Ljava/util/UUID;)Ljava/lang/String;|user|0
+   Method End: getPlayerResponse(Ljava/util/UUID;)Ljava/lang/String;
+   Method Start: getGuildResponse(Ljava/util/UUID;)Ljava/lang/String;
+      @|lagg\ApiRequests.java|2316|2332|getGuildResponse|method|lagg.ApiRequests|getGuildResponse|(Ljava/util/UUID;)Ljava/lang/String;
+      @|lagg\ApiRequests.java|2309|2315|String|class|java.lang.String
+      @|lagg\ApiRequests.java|2333|2337|UUID|class|java.util.UUID
+      @|lagg\ApiRequests.java|2338|2342|user|param|lagg.ApiRequests|getGuildResponse|(Ljava/util/UUID;)Ljava/lang/String;|user|0
+   Method End: getGuildResponse(Ljava/util/UUID;)Ljava/lang/String;
+   Method Start: getUUID(Ljava/lang/String;)Ljava/util/UUID;
+      @|lagg\ApiRequests.java|3932|3939|getUUID|method|lagg.ApiRequests|getUUID|(Ljava/lang/String;)Ljava/util/UUID;
+      @|lagg\ApiRequests.java|3927|3931|UUID|class|java.util.UUID
+      @|lagg\ApiRequests.java|3940|3946|String|class|java.lang.String
+      @|lagg\ApiRequests.java|3947|3951|name|param|lagg.ApiRequests|getUUID|(Ljava/lang/String;)Ljava/util/UUID;|name|0
+      @|lagg\ApiRequests.java|3961|3988|waitUntilMojangCooldownOver|method|lagg.ApiRequests|waitUntilMojangCooldownOver|()V
+      @|lagg\ApiRequests.java|4015|4021|System|class|java.lang.System
+      @|lagg\ApiRequests.java|4022|4039|currentTimeMillis|method|java.lang.System|currentTimeMillis|()J
+      @|lagg\ApiRequests.java|4052|4058|String|class|java.lang.String
+      @|lagg\ApiRequests.java|4101|4120|URLConnectionReader|class|lagg.URLConnectionReader
+      @|lagg\ApiRequests.java|4121|4128|getText|method|lagg.URLConnectionReader|getText|(Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\ApiRequests.java|4182|4186|name|param|lagg.ApiRequests|getUUID|(Ljava/lang/String;)Ljava/util/UUID;|name|0
+      @|lagg\ApiRequests.java|4216|4225|Exception|class|java.lang.Exception
+      @|lagg\ApiRequests.java|4237|4252|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+      @|lagg\ApiRequests.java|4267|4274|Matcher|class|java.util.regex.Matcher
+      @|lagg\ApiRequests.java|4279|4286|Pattern|class|java.util.regex.Pattern
+      @|lagg\ApiRequests.java|4287|4294|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      @|lagg\ApiRequests.java|4315|4322|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      @|lagg\ApiRequests.java|4342|4346|find|method|java.util.regex.Matcher|find|()Z
+      @|lagg\ApiRequests.java|4356|4362|String|class|java.lang.String
+      @|lagg\ApiRequests.java|4382|4387|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\ApiRequests.java|4391|4400|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+      @|lagg\ApiRequests.java|4416|4421|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\ApiRequests.java|4425|4434|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+      @|lagg\ApiRequests.java|4451|4456|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\ApiRequests.java|4460|4469|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+      @|lagg\ApiRequests.java|4487|4492|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\ApiRequests.java|4496|4505|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+      @|lagg\ApiRequests.java|4523|4528|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\ApiRequests.java|4532|4541|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+      @|lagg\ApiRequests.java|4556|4560|UUID|class|java.util.UUID
+      @|lagg\ApiRequests.java|4568|4572|UUID|class|java.util.UUID
+      @|lagg\ApiRequests.java|4573|4583|fromString|method|java.util.UUID|fromString|(Ljava/lang/String;)Ljava/util/UUID;
+   Method End: getUUID(Ljava/lang/String;)Ljava/util/UUID;
+   Method Start: getMembers(Ljava/lang/String;)[Ljava/util/UUID;
+      @|lagg\ApiRequests.java|4656|4666|getMembers|method|lagg.ApiRequests|getMembers|(Ljava/lang/String;)[Ljava/util/UUID;
+      @|lagg\ApiRequests.java|4649|4653|UUID|class|java.util.UUID
+      @|lagg\ApiRequests.java|4667|4673|String|class|java.lang.String
+      @|lagg\ApiRequests.java|4674|4685|apiResponse|param|lagg.ApiRequests|getMembers|(Ljava/lang/String;)[Ljava/util/UUID;|apiResponse|0
+      @|lagg\ApiRequests.java|4695|4702|Matcher|class|java.util.regex.Matcher
+      @|lagg\ApiRequests.java|4707|4714|Pattern|class|java.util.regex.Pattern
+      @|lagg\ApiRequests.java|4715|4722|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      @|lagg\ApiRequests.java|4738|4745|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      @|lagg\ApiRequests.java|4746|4757|apiResponse|param|lagg.ApiRequests|getMembers|(Ljava/lang/String;)[Ljava/util/UUID;|apiResponse|0
+      @|lagg\ApiRequests.java|4769|4778|ArrayList|class|java.util.ArrayList
+      @|lagg\ApiRequests.java|4779|4783|UUID|class|java.util.UUID
+      @|lagg\ApiRequests.java|4796|4805|ArrayList|class|java.util.ArrayList
+      @|lagg\ApiRequests.java|4806|4810|UUID|class|java.util.UUID
+      @|lagg\ApiRequests.java|4832|4836|find|method|java.util.regex.Matcher|find|()Z
+      @|lagg\ApiRequests.java|4857|4860|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|lagg\ApiRequests.java|4861|4865|UUID|class|java.util.UUID
+      @|lagg\ApiRequests.java|4866|4876|fromString|method|java.util.UUID|fromString|(Ljava/lang/String;)Ljava/util/UUID;
+      @|lagg\ApiRequests.java|4879|4884|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\ApiRequests.java|4911|4915|UUID|class|java.util.UUID
+      @|lagg\ApiRequests.java|4930|4934|UUID|class|java.util.UUID
+      @|lagg\ApiRequests.java|4940|4944|size|method|java.util.Collection|size|()I
+      @|lagg\ApiRequests.java|4980|4984|size|method|java.util.Collection|size|()I
+      @|lagg\ApiRequests.java|5021|5024|get|method|java.util.List|get|(I)Ljava/lang/Object;
+   Method End: getMembers(Ljava/lang/String;)[Ljava/util/UUID;
+   Method Start: getOfficers(Ljava/lang/String;)[Ljava/util/UUID;
+      @|lagg\ApiRequests.java|5098|5109|getOfficers|method|lagg.ApiRequests|getOfficers|(Ljava/lang/String;)[Ljava/util/UUID;
+      @|lagg\ApiRequests.java|5091|5095|UUID|class|java.util.UUID
+      @|lagg\ApiRequests.java|5110|5116|String|class|java.lang.String
+      @|lagg\ApiRequests.java|5117|5128|apiResponse|param|lagg.ApiRequests|getOfficers|(Ljava/lang/String;)[Ljava/util/UUID;|apiResponse|0
+      @|lagg\ApiRequests.java|5138|5145|Matcher|class|java.util.regex.Matcher
+      @|lagg\ApiRequests.java|5150|5157|Pattern|class|java.util.regex.Pattern
+      @|lagg\ApiRequests.java|5158|5165|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      @|lagg\ApiRequests.java|5210|5217|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      @|lagg\ApiRequests.java|5218|5229|apiResponse|param|lagg.ApiRequests|getOfficers|(Ljava/lang/String;)[Ljava/util/UUID;|apiResponse|0
+      @|lagg\ApiRequests.java|5238|5247|ArrayList|class|java.util.ArrayList
+      @|lagg\ApiRequests.java|5248|5252|UUID|class|java.util.UUID
+      @|lagg\ApiRequests.java|5265|5274|ArrayList|class|java.util.ArrayList
+      @|lagg\ApiRequests.java|5275|5279|UUID|class|java.util.UUID
+      @|lagg\ApiRequests.java|5298|5302|find|method|java.util.regex.Matcher|find|()Z
+      @|lagg\ApiRequests.java|5320|5323|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|lagg\ApiRequests.java|5324|5328|UUID|class|java.util.UUID
+      @|lagg\ApiRequests.java|5329|5339|fromString|method|java.util.UUID|fromString|(Ljava/lang/String;)Ljava/util/UUID;
+      @|lagg\ApiRequests.java|5342|5347|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\ApiRequests.java|5371|5375|UUID|class|java.util.UUID
+      @|lagg\ApiRequests.java|5390|5394|UUID|class|java.util.UUID
+      @|lagg\ApiRequests.java|5400|5404|size|method|java.util.Collection|size|()I
+      @|lagg\ApiRequests.java|5440|5444|size|method|java.util.Collection|size|()I
+      @|lagg\ApiRequests.java|5481|5484|get|method|java.util.List|get|(I)Ljava/lang/Object;
+   Method End: getOfficers(Ljava/lang/String;)[Ljava/util/UUID;
+   Method Start: uuidsToUsernames([Ljava/util/UUID;)[Ljava/lang/String;
+      @|lagg\ApiRequests.java|5564|5580|uuidsToUsernames|method|lagg.ApiRequests|uuidsToUsernames|([Ljava/util/UUID;)[Ljava/lang/String;
+      @|lagg\ApiRequests.java|5555|5561|String|class|java.lang.String
+      @|lagg\ApiRequests.java|5581|5585|UUID|class|java.util.UUID
+      @|lagg\ApiRequests.java|5588|5593|uuids|param|lagg.ApiRequests|uuidsToUsernames|([Ljava/util/UUID;)[Ljava/lang/String;|uuids|0
+      @|lagg\ApiRequests.java|5603|5609|String|class|java.lang.String
+      @|lagg\ApiRequests.java|5624|5630|String|class|java.lang.String
+      @|lagg\ApiRequests.java|5631|5636|uuids|param|lagg.ApiRequests|uuidsToUsernames|([Ljava/util/UUID;)[Ljava/lang/String;|uuids|0
+      Field: Array Length, skipping
+      @|lagg\ApiRequests.java|5669|5674|uuids|param|lagg.ApiRequests|uuidsToUsernames|([Ljava/util/UUID;)[Ljava/lang/String;|uuids|0
+      Field: Array Length, skipping
+      @|lagg\ApiRequests.java|5708|5719|getUsername|method|lagg.ApiRequests|getUsername|(Ljava/util/UUID;)Ljava/lang/String;
+      @|lagg\ApiRequests.java|5720|5725|uuids|param|lagg.ApiRequests|uuidsToUsernames|([Ljava/util/UUID;)[Ljava/lang/String;|uuids|0
+   Method End: uuidsToUsernames([Ljava/util/UUID;)[Ljava/lang/String;
+   Method Start: getUsername(Ljava/util/UUID;)Ljava/lang/String;
+      @|lagg\ApiRequests.java|5798|5809|getUsername|method|lagg.ApiRequests|getUsername|(Ljava/util/UUID;)Ljava/lang/String;
+      @|lagg\ApiRequests.java|5791|5797|String|class|java.lang.String
+      @|lagg\ApiRequests.java|5810|5814|UUID|class|java.util.UUID
+      @|lagg\ApiRequests.java|5815|5819|user|param|lagg.ApiRequests|getUsername|(Ljava/util/UUID;)Ljava/lang/String;|user|0
+      @|lagg\ApiRequests.java|5829|5856|waitUntilMojangCooldownOver|method|lagg.ApiRequests|waitUntilMojangCooldownOver|()V
+      @|lagg\ApiRequests.java|5863|5869|String|class|java.lang.String
+      @|lagg\ApiRequests.java|5888|5894|String|class|java.lang.String
+      @|lagg\ApiRequests.java|5910|5914|user|param|lagg.ApiRequests|getUsername|(Ljava/util/UUID;)Ljava/lang/String;|user|0
+      @|lagg\ApiRequests.java|5915|5923|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|lagg\ApiRequests.java|5926|5936|replaceAll|method|java.lang.String|replaceAll|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\ApiRequests.java|5974|5993|URLConnectionReader|class|lagg.URLConnectionReader
+      @|lagg\ApiRequests.java|5994|6001|getText|method|lagg.URLConnectionReader|getText|(Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\ApiRequests.java|6082|6091|Exception|class|java.lang.Exception
+      @|lagg\ApiRequests.java|6103|6118|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+      @|lagg\ApiRequests.java|6133|6140|Matcher|class|java.util.regex.Matcher
+      @|lagg\ApiRequests.java|6145|6152|Pattern|class|java.util.regex.Pattern
+      @|lagg\ApiRequests.java|6153|6160|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      @|lagg\ApiRequests.java|6183|6190|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      @|lagg\ApiRequests.java|6208|6214|String|class|java.lang.String
+      @|lagg\ApiRequests.java|6242|6246|find|method|java.util.regex.Matcher|find|()Z
+      @|lagg\ApiRequests.java|6270|6275|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+   Method End: getUsername(Ljava/util/UUID;)Ljava/lang/String;
+   Method Start: getNetworkLevel(Ljava/lang/String;)I
+      @|lagg\ApiRequests.java|6336|6351|getNetworkLevel|method|lagg.ApiRequests|getNetworkLevel|(Ljava/lang/String;)I
+      @|lagg\ApiRequests.java|6352|6358|String|class|java.lang.String
+      @|lagg\ApiRequests.java|6359|6370|apiResponse|param|lagg.ApiRequests|getNetworkLevel|(Ljava/lang/String;)I|apiResponse|0
+      @|lagg\ApiRequests.java|6377|6384|Matcher|class|java.util.regex.Matcher
+      @|lagg\ApiRequests.java|6389|6396|Pattern|class|java.util.regex.Pattern
+      @|lagg\ApiRequests.java|6397|6404|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      @|lagg\ApiRequests.java|6432|6439|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      @|lagg\ApiRequests.java|6440|6451|apiResponse|param|lagg.ApiRequests|getNetworkLevel|(Ljava/lang/String;)I|apiResponse|0
+      @|lagg\ApiRequests.java|6459|6463|find|method|java.util.regex.Matcher|find|()Z
+      @|lagg\ApiRequests.java|6477|6484|Integer|class|java.lang.Integer
+      @|lagg\ApiRequests.java|6485|6493|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|lagg\ApiRequests.java|6496|6501|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+   Method End: getNetworkLevel(Ljava/lang/String;)I
+   Method Start: getWarlordsClasses(Ljava/lang/String;)[[Ljava/lang/Object;
+      @|lagg\ApiRequests.java|6539|6557|getWarlordsClasses|method|lagg.ApiRequests|getWarlordsClasses|(Ljava/lang/String;)[[Ljava/lang/Object;
+      @|lagg\ApiRequests.java|6528|6534|Object|class|java.lang.Object
+      @|lagg\ApiRequests.java|6558|6564|String|class|java.lang.String
+      @|lagg\ApiRequests.java|6565|6576|apiResponse|param|lagg.ApiRequests|getWarlordsClasses|(Ljava/lang/String;)[[Ljava/lang/Object;|apiResponse|0
+      @|lagg\ApiRequests.java|6583|6592|ArrayList|class|java.util.ArrayList
+      @|lagg\ApiRequests.java|6593|6599|Object|class|java.lang.Object
+      @|lagg\ApiRequests.java|6614|6623|ArrayList|class|java.util.ArrayList
+      @|lagg\ApiRequests.java|6624|6630|Object|class|java.lang.Object
+      @|lagg\ApiRequests.java|6640|6647|Matcher|class|java.util.regex.Matcher
+      @|lagg\ApiRequests.java|6652|6659|Pattern|class|java.util.regex.Pattern
+      @|lagg\ApiRequests.java|6660|6667|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      @|lagg\ApiRequests.java|6706|6713|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      @|lagg\ApiRequests.java|6714|6725|apiResponse|param|lagg.ApiRequests|getWarlordsClasses|(Ljava/lang/String;)[[Ljava/lang/Object;|apiResponse|0
+      @|lagg\ApiRequests.java|6739|6743|find|method|java.util.regex.Matcher|find|()Z
+      @|lagg\ApiRequests.java|6753|6759|Object|class|java.lang.Object
+      @|lagg\ApiRequests.java|6781|6786|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\ApiRequests.java|6790|6797|Integer|class|java.lang.Integer
+      @|lagg\ApiRequests.java|6798|6806|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|lagg\ApiRequests.java|6809|6814|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\ApiRequests.java|6830|6833|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|lagg\ApiRequests.java|6858|6864|Object|class|java.lang.Object
+      @|lagg\ApiRequests.java|6881|6887|Object|class|java.lang.Object
+      @|lagg\ApiRequests.java|6893|6897|size|method|java.util.Collection|size|()I
+      @|lagg\ApiRequests.java|6930|6934|size|method|java.util.Collection|size|()I
+      @|lagg\ApiRequests.java|6968|6971|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|lagg\ApiRequests.java|7002|7005|get|method|java.util.List|get|(I)Ljava/lang/Object;
+   Method End: getWarlordsClasses(Ljava/lang/String;)[[Ljava/lang/Object;
+   Method Start: getSmashHeroesClasses(Ljava/lang/String;)[[Ljava/lang/String;
+      @|lagg\ApiRequests.java|7072|7093|getSmashHeroesClasses|method|lagg.ApiRequests|getSmashHeroesClasses|(Ljava/lang/String;)[[Ljava/lang/String;
+      @|lagg\ApiRequests.java|7061|7067|String|class|java.lang.String
+      @|lagg\ApiRequests.java|7094|7100|String|class|java.lang.String
+      @|lagg\ApiRequests.java|7101|7112|apiResponse|param|lagg.ApiRequests|getSmashHeroesClasses|(Ljava/lang/String;)[[Ljava/lang/String;|apiResponse|0
+      @|lagg\ApiRequests.java|7119|7128|ArrayList|class|java.util.ArrayList
+      @|lagg\ApiRequests.java|7129|7135|String|class|java.lang.String
+      @|lagg\ApiRequests.java|7150|7159|ArrayList|class|java.util.ArrayList
+      @|lagg\ApiRequests.java|7160|7166|String|class|java.lang.String
+      @|lagg\ApiRequests.java|7176|7183|Matcher|class|java.util.regex.Matcher
+      @|lagg\ApiRequests.java|7188|7195|Pattern|class|java.util.regex.Pattern
+      @|lagg\ApiRequests.java|7196|7203|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      @|lagg\ApiRequests.java|7264|7271|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      @|lagg\ApiRequests.java|7272|7283|apiResponse|param|lagg.ApiRequests|getSmashHeroesClasses|(Ljava/lang/String;)[[Ljava/lang/String;|apiResponse|0
+      @|lagg\ApiRequests.java|7297|7301|find|method|java.util.regex.Matcher|find|()Z
+      @|lagg\ApiRequests.java|7311|7317|String|class|java.lang.String
+      @|lagg\ApiRequests.java|7327|7332|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\ApiRequests.java|7341|7347|String|class|java.lang.String
+      @|lagg\ApiRequests.java|7364|7369|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\ApiRequests.java|7373|7379|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|lagg\ApiRequests.java|7434|7439|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\ApiRequests.java|7443|7449|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|lagg\ApiRequests.java|7480|7485|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\ApiRequests.java|7518|7523|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\ApiRequests.java|7587|7591|size|method|java.util.Collection|size|()I
+      @|lagg\ApiRequests.java|7625|7628|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|lagg\ApiRequests.java|7635|7641|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|lagg\ApiRequests.java|7677|7683|String|class|java.lang.String
+      @|lagg\ApiRequests.java|7704|7707|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|lagg\ApiRequests.java|7730|7736|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|lagg\ApiRequests.java|7758|7761|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|lagg\ApiRequests.java|7800|7808|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|lagg\ApiRequests.java|7831|7837|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|lagg\ApiRequests.java|7859|7862|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|lagg\ApiRequests.java|7921|7927|String|class|java.lang.String
+      @|lagg\ApiRequests.java|7970|7973|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|lagg\ApiRequests.java|8009|8015|String|class|java.lang.String
+      @|lagg\ApiRequests.java|8032|8038|String|class|java.lang.String
+      @|lagg\ApiRequests.java|8044|8048|size|method|java.util.Collection|size|()I
+      @|lagg\ApiRequests.java|8081|8085|size|method|java.util.Collection|size|()I
+      @|lagg\ApiRequests.java|8119|8122|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|lagg\ApiRequests.java|8153|8156|get|method|java.util.List|get|(I)Ljava/lang/Object;
+   Method End: getSmashHeroesClasses(Ljava/lang/String;)[[Ljava/lang/String;
+   Method Start: findRank(Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\ApiRequests.java|8216|8224|findRank|method|lagg.ApiRequests|findRank|(Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\ApiRequests.java|8209|8215|String|class|java.lang.String
+      @|lagg\ApiRequests.java|8225|8231|String|class|java.lang.String
+      @|lagg\ApiRequests.java|8232|8243|apiResponse|param|lagg.ApiRequests|findRank|(Ljava/lang/String;)Ljava/lang/String;|apiResponse|0
+      @|lagg\ApiRequests.java|8250|8256|String|class|java.lang.String
+      @|lagg\ApiRequests.java|8276|8282|String|class|java.lang.String
+      @|lagg\ApiRequests.java|8301|8308|Matcher|class|java.util.regex.Matcher
+      @|lagg\ApiRequests.java|8313|8320|Pattern|class|java.util.regex.Pattern
+      @|lagg\ApiRequests.java|8321|8328|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      @|lagg\ApiRequests.java|8358|8365|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      @|lagg\ApiRequests.java|8366|8377|apiResponse|param|lagg.ApiRequests|findRank|(Ljava/lang/String;)Ljava/lang/String;|apiResponse|0
+      @|lagg\ApiRequests.java|8391|8395|find|method|java.util.regex.Matcher|find|()Z
+      @|lagg\ApiRequests.java|8420|8425|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\ApiRequests.java|8429|8439|replaceAll|method|java.lang.String|replaceAll|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\ApiRequests.java|8454|8464|replaceAll|method|java.lang.String|replaceAll|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\ApiRequests.java|8484|8491|Matcher|class|java.util.regex.Matcher
+      @|lagg\ApiRequests.java|8497|8504|Pattern|class|java.util.regex.Pattern
+      @|lagg\ApiRequests.java|8505|8512|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      @|lagg\ApiRequests.java|8545|8552|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      @|lagg\ApiRequests.java|8553|8564|apiResponse|param|lagg.ApiRequests|findRank|(Ljava/lang/String;)Ljava/lang/String;|apiResponse|0
+      @|lagg\ApiRequests.java|8582|8586|find|method|java.util.regex.Matcher|find|()Z
+      @|lagg\ApiRequests.java|8616|8621|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\ApiRequests.java|8625|8635|replaceAll|method|java.lang.String|replaceAll|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\ApiRequests.java|8650|8660|replaceAll|method|java.lang.String|replaceAll|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   Method End: findRank(Ljava/lang/String;)Ljava/lang/String;
+   Method Start: getPlusColor(Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\ApiRequests.java|8786|8798|getPlusColor|method|lagg.ApiRequests|getPlusColor|(Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\ApiRequests.java|8779|8785|String|class|java.lang.String
+      @|lagg\ApiRequests.java|8799|8805|String|class|java.lang.String
+      @|lagg\ApiRequests.java|8806|8817|apiResponse|param|lagg.ApiRequests|getPlusColor|(Ljava/lang/String;)Ljava/lang/String;|apiResponse|0
+      @|lagg\ApiRequests.java|8824|8831|Matcher|class|java.util.regex.Matcher
+      @|lagg\ApiRequests.java|8836|8843|Pattern|class|java.util.regex.Pattern
+      @|lagg\ApiRequests.java|8844|8851|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      @|lagg\ApiRequests.java|8883|8890|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      @|lagg\ApiRequests.java|8891|8902|apiResponse|param|lagg.ApiRequests|getPlusColor|(Ljava/lang/String;)Ljava/lang/String;|apiResponse|0
+      @|lagg\ApiRequests.java|8913|8917|find|method|java.util.regex.Matcher|find|()Z
+      @|lagg\ApiRequests.java|8927|8945|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|lagg\ApiRequests.java|8954|8972|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|lagg\ApiRequests.java|8973|8980|valueOf|method|net.minecraft.util.EnumChatFormatting|valueOf|(Ljava/lang/String;)Lnet/minecraft/util/EnumChatFormatting;
+      @|lagg\ApiRequests.java|8983|8988|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\ApiRequests.java|9011|9019|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+   Method End: getPlusColor(Ljava/lang/String;)Ljava/lang/String;
+   Method Start: getColoredRank(Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\ApiRequests.java|9085|9099|getColoredRank|method|lagg.ApiRequests|getColoredRank|(Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\ApiRequests.java|9078|9084|String|class|java.lang.String
+      @|lagg\ApiRequests.java|9100|9106|String|class|java.lang.String
+      @|lagg\ApiRequests.java|9107|9118|apiResponse|param|lagg.ApiRequests|getColoredRank|(Ljava/lang/String;)Ljava/lang/String;|apiResponse|0
+      @|lagg\ApiRequests.java|9125|9131|String|class|java.lang.String
+      @|lagg\ApiRequests.java|9139|9147|findRank|method|lagg.ApiRequests|findRank|(Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\ApiRequests.java|9148|9159|apiResponse|param|lagg.ApiRequests|getColoredRank|(Ljava/lang/String;)Ljava/lang/String;|apiResponse|0
+      @|lagg\ApiRequests.java|9173|9181|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|lagg\ApiRequests.java|9239|9247|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|lagg\ApiRequests.java|9305|9313|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|lagg\ApiRequests.java|9374|9382|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|lagg\ApiRequests.java|9439|9447|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|lagg\ApiRequests.java|9505|9513|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|lagg\ApiRequests.java|9531|9539|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|lagg\ApiRequests.java|9599|9607|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|lagg\ApiRequests.java|9663|9671|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|lagg\ApiRequests.java|9684|9690|String|class|java.lang.String
+      @|lagg\ApiRequests.java|9703|9715|getPlusColor|method|lagg.ApiRequests|getPlusColor|(Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\ApiRequests.java|9716|9727|apiResponse|param|lagg.ApiRequests|getColoredRank|(Ljava/lang/String;)Ljava/lang/String;|apiResponse|0
+      @|lagg\ApiRequests.java|9746|9755|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+      @|lagg\ApiRequests.java|9764|9771|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|lagg\ApiRequests.java|9803|9812|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+   Method End: getColoredRank(Ljava/lang/String;)Ljava/lang/String;
+   Method Start: getMwWins(Ljava/lang/String;)I
+      @|lagg\ApiRequests.java|9867|9876|getMwWins|method|lagg.ApiRequests|getMwWins|(Ljava/lang/String;)I
+      @|lagg\ApiRequests.java|9877|9883|String|class|java.lang.String
+      @|lagg\ApiRequests.java|9884|9895|apiResponse|param|lagg.ApiRequests|getMwWins|(Ljava/lang/String;)I|apiResponse|0
+      @|lagg\ApiRequests.java|9905|9912|Matcher|class|java.util.regex.Matcher
+      @|lagg\ApiRequests.java|9917|9924|Pattern|class|java.util.regex.Pattern
+      @|lagg\ApiRequests.java|9925|9932|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      @|lagg\ApiRequests.java|9970|9977|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      @|lagg\ApiRequests.java|9978|9989|apiResponse|param|lagg.ApiRequests|getMwWins|(Ljava/lang/String;)I|apiResponse|0
+      @|lagg\ApiRequests.java|10001|10005|Main|class|lagg.Main
+      @|lagg\ApiRequests.java|10006|10011|OWNER|field|lagg.Main|OWNER
+      @|lagg\ApiRequests.java|10012|10020|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|lagg\ApiRequests.java|10023|10029|charAt|method|java.lang.CharSequence|charAt|(I)C
+      @|lagg\ApiRequests.java|10039|10048|Minecraft|class|net.minecraft.client.Minecraft
+      @|lagg\ApiRequests.java|10049|10061|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|lagg\ApiRequests.java|10064|10072|shutdown|method|net.minecraft.client.Minecraft|shutdown|()V
+      @|lagg\ApiRequests.java|10084|10088|find|method|java.util.regex.Matcher|find|()Z
+      @|lagg\ApiRequests.java|10105|10112|Integer|class|java.lang.Integer
+      @|lagg\ApiRequests.java|10113|10121|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|lagg\ApiRequests.java|10124|10129|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+   Method End: getMwWins(Ljava/lang/String;)I
+   Method Start: getMwFinals(Ljava/lang/String;)I
+      @|lagg\ApiRequests.java|10162|10173|getMwFinals|method|lagg.ApiRequests|getMwFinals|(Ljava/lang/String;)I
+      @|lagg\ApiRequests.java|10174|10180|String|class|java.lang.String
+      @|lagg\ApiRequests.java|10181|10192|apiResponse|param|lagg.ApiRequests|getMwFinals|(Ljava/lang/String;)I|apiResponse|0
+      @|lagg\ApiRequests.java|10199|10206|Matcher|class|java.util.regex.Matcher
+      @|lagg\ApiRequests.java|10211|10218|Pattern|class|java.util.regex.Pattern
+      @|lagg\ApiRequests.java|10219|10226|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      @|lagg\ApiRequests.java|10253|10260|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      @|lagg\ApiRequests.java|10261|10272|apiResponse|param|lagg.ApiRequests|getMwFinals|(Ljava/lang/String;)I|apiResponse|0
+      @|lagg\ApiRequests.java|10286|10290|find|method|java.util.regex.Matcher|find|()Z
+      @|lagg\ApiRequests.java|10310|10317|Integer|class|java.lang.Integer
+      @|lagg\ApiRequests.java|10318|10326|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|lagg\ApiRequests.java|10329|10334|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+   Method End: getMwFinals(Ljava/lang/String;)I
+   Method Start: getMwClasses(Ljava/lang/String;)[[Ljava/lang/Object;
+      @|lagg\ApiRequests.java|10374|10386|getMwClasses|method|lagg.ApiRequests|getMwClasses|(Ljava/lang/String;)[[Ljava/lang/Object;
+      @|lagg\ApiRequests.java|10363|10369|Object|class|java.lang.Object
+      @|lagg\ApiRequests.java|10387|10393|String|class|java.lang.String
+      @|lagg\ApiRequests.java|10394|10405|apiResponse|param|lagg.ApiRequests|getMwClasses|(Ljava/lang/String;)[[Ljava/lang/Object;|apiResponse|0
+      @|lagg\ApiRequests.java|10418|10425|Matcher|class|java.util.regex.Matcher
+      @|lagg\ApiRequests.java|10430|10437|Pattern|class|java.util.regex.Pattern
+      @|lagg\ApiRequests.java|10438|10445|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      @|lagg\ApiRequests.java|10504|10511|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      @|lagg\ApiRequests.java|10512|10523|apiResponse|param|lagg.ApiRequests|getMwClasses|(Ljava/lang/String;)[[Ljava/lang/Object;|apiResponse|0
+      @|lagg\ApiRequests.java|10535|10544|ArrayList|class|java.util.ArrayList
+      @|lagg\ApiRequests.java|10545|10551|Object|class|java.lang.Object
+      @|lagg\ApiRequests.java|10566|10575|ArrayList|class|java.util.ArrayList
+      @|lagg\ApiRequests.java|10576|10582|Object|class|java.lang.Object
+      @|lagg\ApiRequests.java|10606|10610|find|method|java.util.regex.Matcher|find|()Z
+      @|lagg\ApiRequests.java|10626|10632|String|class|java.lang.String
+      @|lagg\ApiRequests.java|10642|10647|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\ApiRequests.java|10662|10668|String|class|java.lang.String
+      @|lagg\ApiRequests.java|10679|10684|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\ApiRequests.java|10732|10738|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|lagg\ApiRequests.java|10799|10805|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|lagg\ApiRequests.java|10879|10885|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|lagg\ApiRequests.java|10976|10982|charAt|method|java.lang.CharSequence|charAt|(I)C
+      @|lagg\ApiRequests.java|11024|11031|Integer|class|java.lang.Integer
+      @|lagg\ApiRequests.java|11032|11040|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|lagg\ApiRequests.java|11043|11048|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\ApiRequests.java|11119|11123|size|method|java.util.Collection|size|()I
+      @|lagg\ApiRequests.java|11163|11166|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|lagg\ApiRequests.java|11173|11179|equals|method|java.lang.Object|equals|(Ljava/lang/Object;)Z
+      @|lagg\ApiRequests.java|11232|11235|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|lagg\ApiRequests.java|11317|11323|Object|class|java.lang.Object
+      @|lagg\ApiRequests.java|11372|11375|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|lagg\ApiRequests.java|11400|11403|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|lagg\ApiRequests.java|11409|11413|size|method|java.util.Collection|size|()I
+      @|lagg\ApiRequests.java|11470|11476|Object|class|java.lang.Object
+      @|lagg\ApiRequests.java|11496|11502|Object|class|java.lang.Object
+      @|lagg\ApiRequests.java|11508|11512|size|method|java.util.Collection|size|()I
+      @|lagg\ApiRequests.java|11551|11555|size|method|java.util.Collection|size|()I
+      @|lagg\ApiRequests.java|11598|11601|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      Field: Array Length, skipping
+      @|lagg\ApiRequests.java|11653|11656|get|method|java.util.List|get|(I)Ljava/lang/Object;
+   Method End: getMwClasses(Ljava/lang/String;)[[Ljava/lang/Object;
+Class End  : lagg.ApiRequests
+endProcessing lagg\ApiRequests.java
+
+processing lagg\Command.java
+@|lagg\Command.java|8|12|lagg|package|lagg|(file)
+Class Start: lagg.Command
+   Method Start: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|lagg\Command.java|2109|2124|getCommandUsage|method|net.minecraft.command.ICommand|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|lagg\Command.java|2102|2108|String|class|java.lang.String
+      @|lagg\Command.java|2125|2139|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|lagg\Command.java|2140|2144|arg0|param|lagg.Command|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;|arg0|0
+   Method End: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+   Method Start: getRequiredPermissionLevel()I
+      @|lagg\Command.java|2193|2219|getRequiredPermissionLevel|method|net.minecraft.command.CommandBase|getRequiredPermissionLevel|()I
+   Method End: getRequiredPermissionLevel()I
+   Method Start: getCommandName()Ljava/lang/String;
+      @|lagg\Command.java|2266|2280|getCommandName|method|net.minecraft.command.ICommand|getCommandName|()Ljava/lang/String;
+      @|lagg\Command.java|2259|2265|String|class|java.lang.String
+   Method End: getCommandName()Ljava/lang/String;
+   Method Start: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|lagg\Command.java|2330|2344|processCommand|method|net.minecraft.command.ICommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|lagg\Command.java|2396|2412|CommandException|class|net.minecraft.command.CommandException
+      @|lagg\Command.java|2345|2359|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|lagg\Command.java|2360|2366|sender|param|lagg.Command|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|sender|0
+      @|lagg\Command.java|2374|2380|String|class|java.lang.String
+      @|lagg\Command.java|2383|2387|arg1|param|lagg.Command|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|arg1|1
+   Method End: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+Class End  : lagg.Command
+endProcessing lagg\Command.java
+
+processing lagg\Game.java
+@|lagg\Game.java|8|12|lagg|package|lagg|(file)
+Class Start: lagg.Game
+   @|lagg\Game.java|144|150|String|class|java.lang.String
+   @|lagg\Game.java|151|157|server|field|lagg.Game|server|
+   @|lagg\Game.java|167|173|String|class|java.lang.String
+   @|lagg\Game.java|174|182|gamemode|field|lagg.Game|gamemode|
+   @|lagg\Game.java|200|214|hasGameStarted|field|lagg.Game|hasGameStarted|
+   @|lagg\Game.java|229|242|firstJoinTime|field|lagg.Game|firstJoinTime|
+   @|lagg\Game.java|257|269|lastJoinTime|field|lagg.Game|lastJoinTime|
+   @|lagg\Game.java|289|295|String|class|java.lang.String
+   @|lagg\Game.java|279|288|ArrayList|class|java.util.ArrayList
+   @|lagg\Game.java|297|304|players|field|lagg.Game|players|
+   Method Start: Game(Ljava/lang/String;)V
+      @|lagg\Game.java|316|320|Game|method|lagg.Game|Game|(Ljava/lang/String;)V
+      @|lagg\Game.java|321|327|String|class|java.lang.String
+      @|lagg\Game.java|328|334|server|param|lagg.Game|Game|(Ljava/lang/String;)V|server|0
+      @|lagg\Game.java|345|351|server|field|lagg.Game|server
+      @|lagg\Game.java|354|360|server|param|lagg.Game|Game|(Ljava/lang/String;)V|server|0
+      @|lagg\Game.java|369|377|gamemode|field|lagg.Game|gamemode
+      @|lagg\Game.java|380|387|getGame|method|lagg.Game|getGame|()Ljava/lang/String;
+      @|lagg\Game.java|398|412|hasGameStarted|field|lagg.Game|hasGameStarted
+      @|lagg\Game.java|415|429|hasGameStarted|method|lagg.Game|hasGameStarted|()Z
+      @|lagg\Game.java|440|453|firstJoinTime|field|lagg.Game|firstJoinTime
+      @|lagg\Game.java|456|462|System|class|java.lang.System
+      @|lagg\Game.java|463|480|currentTimeMillis|method|java.lang.System|currentTimeMillis|()J
+      @|lagg\Game.java|491|503|lastJoinTime|field|lagg.Game|lastJoinTime
+      @|lagg\Game.java|506|512|System|class|java.lang.System
+      @|lagg\Game.java|513|530|currentTimeMillis|method|java.lang.System|currentTimeMillis|()J
+      @|lagg\Game.java|541|548|players|field|lagg.Game|players
+      @|lagg\Game.java|551|555|Main|class|lagg.Main
+      @|lagg\Game.java|556|571|getPlayersInTab|method|lagg.Main|getPlayersInTab|()Ljava/util/ArrayList;
+   Method End: Game(Ljava/lang/String;)V
+   Method Start: rejoined()V
+      @|lagg\Game.java|593|601|rejoined|method|lagg.Game|rejoined|()V
+      @|lagg\Game.java|613|625|lastJoinTime|field|lagg.Game|lastJoinTime
+      @|lagg\Game.java|628|634|System|class|java.lang.System
+      @|lagg\Game.java|635|652|currentTimeMillis|method|java.lang.System|currentTimeMillis|()J
+      @|lagg\Game.java|663|670|players|field|lagg.Game|players
+      @|lagg\Game.java|673|677|Main|class|lagg.Main
+      @|lagg\Game.java|678|693|getPlayersInTab|method|lagg.Main|getPlayersInTab|()Ljava/util/ArrayList;
+      @|lagg\Game.java|704|718|hasGameStarted|field|lagg.Game|hasGameStarted
+      @|lagg\Game.java|721|735|hasGameStarted|method|lagg.Game|hasGameStarted|()Z
+   Method End: rejoined()V
+   Method Start: getGame()Ljava/lang/String;
+      @|lagg\Game.java|769|776|getGame|method|lagg.Game|getGame|()Ljava/lang/String;
+      @|lagg\Game.java|762|768|String|class|java.lang.String
+      @|lagg\Game.java|783|789|String|class|java.lang.String
+      @|lagg\Game.java|806|815|Minecraft|class|net.minecraft.client.Minecraft
+      @|lagg\Game.java|816|828|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|lagg\Game.java|831|840|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|lagg\Game.java|841|859|getWorldScoreboard|method|net.minecraft.entity.player.EntityPlayer|getWorldScoreboard|()Lnet/minecraft/scoreboard/Scoreboard;
+      @|lagg\Game.java|862|887|getObjectiveInDisplaySlot|method|net.minecraft.scoreboard.Scoreboard|getObjectiveInDisplaySlot|(I)Lnet/minecraft/scoreboard/ScoreObjective;
+      @|lagg\Game.java|891|905|getDisplayName|method|net.minecraft.scoreboard.ScoreObjective|getDisplayName|()Ljava/lang/String;
+      @|lagg\Game.java|911|917|String|class|java.lang.String
+      @|lagg\Game.java|950|960|replaceAll|method|java.lang.String|replaceAll|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\Game.java|979|989|replaceAll|method|java.lang.String|replaceAll|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\Game.java|1003|1013|replaceAll|method|java.lang.String|replaceAll|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   Method End: getGame()Ljava/lang/String;
+   Method Start: hasGameStarted()Z
+      @|lagg\Game.java|1085|1099|hasGameStarted|method|lagg.Game|hasGameStarted|()Z
+      @|lagg\Game.java|1109|1118|ArrayList|class|java.util.ArrayList
+      @|lagg\Game.java|1119|1125|String|class|java.lang.String
+      @|lagg\Game.java|1140|1144|Main|class|lagg.Main
+      @|lagg\Game.java|1145|1158|getScoreboard|method|lagg.Main|getScoreboard|()Ljava/util/ArrayList;
+      @|lagg\Game.java|1195|1199|size|method|java.util.Collection|size|()I
+      @|lagg\Game.java|1230|1233|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|lagg\Game.java|1237|1245|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+   Method End: hasGameStarted()Z
+Class End  : lagg.Game
+endProcessing lagg\Game.java
+
+processing lagg\LoadScoreboard.java
+@|lagg\LoadScoreboard.java|8|12|lagg|package|lagg|(file)
+Class Start: lagg.LoadScoreboard
+   Method Start: LoadScoreboard()V
+      @|lagg\LoadScoreboard.java|628|642|LoadScoreboard|method|lagg.LoadScoreboard|LoadScoreboard|()V
+   Method End: LoadScoreboard()V
+   Method Start: othermethod()V
+      @|lagg\LoadScoreboard.java|668|679|othermethod|method|lagg.LoadScoreboard|othermethod|()V
+      @|lagg\LoadScoreboard.java|686|690|Main|class|lagg.Main
+      @|lagg\LoadScoreboard.java|691|701|scoreboard|field|lagg.Main|scoreboard
+      @|lagg\LoadScoreboard.java|708|717|ArrayList|class|java.util.ArrayList
+      @|lagg\LoadScoreboard.java|718|724|String|class|java.lang.String
+      @|lagg\LoadScoreboard.java|731|747|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution
+      @|lagg\LoadScoreboard.java|771|787|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution
+      @|lagg\LoadScoreboard.java|788|797|Minecraft|class|net.minecraft.client.Minecraft
+      @|lagg\LoadScoreboard.java|798|810|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|lagg\LoadScoreboard.java|823|833|Scoreboard|class|net.minecraft.scoreboard.Scoreboard
+      @|lagg\LoadScoreboard.java|847|856|Minecraft|class|net.minecraft.client.Minecraft
+      @|lagg\LoadScoreboard.java|857|869|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|lagg\LoadScoreboard.java|872|880|theWorld|field|net.minecraft.client.Minecraft|theWorld
+      @|lagg\LoadScoreboard.java|881|894|getScoreboard|method|net.minecraft.world.World|getScoreboard|()Lnet/minecraft/scoreboard/Scoreboard;
+      @|lagg\LoadScoreboard.java|906|920|ScoreObjective|class|net.minecraft.scoreboard.ScoreObjective
+      @|lagg\LoadScoreboard.java|952|967|ScorePlayerTeam|class|net.minecraft.scoreboard.ScorePlayerTeam
+      @|lagg\LoadScoreboard.java|997|1011|getPlayersTeam|method|net.minecraft.scoreboard.Scoreboard|getPlayersTeam|(Ljava/lang/String;)Lnet/minecraft/scoreboard/ScorePlayerTeam;
+      @|lagg\LoadScoreboard.java|1012|1021|Minecraft|class|net.minecraft.client.Minecraft
+      @|lagg\LoadScoreboard.java|1022|1034|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|lagg\LoadScoreboard.java|1037|1046|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|lagg\LoadScoreboard.java|1047|1054|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
+      @|lagg\LoadScoreboard.java|1144|1157|getChatFormat|method|net.minecraft.scoreboard.ScorePlayerTeam|getChatFormat|()Lnet/minecraft/util/EnumChatFormatting;
+      @|lagg\LoadScoreboard.java|1160|1173|getColorIndex|method|net.minecraft.util.EnumChatFormatting|getColorIndex|()I
+      @|lagg\LoadScoreboard.java|1261|1286|getObjectiveInDisplaySlot|method|net.minecraft.scoreboard.Scoreboard|getObjectiveInDisplaySlot|(I)Lnet/minecraft/scoreboard/ScoreObjective;
+      @|lagg\LoadScoreboard.java|1329|1343|ScoreObjective|class|net.minecraft.scoreboard.ScoreObjective
+      @|lagg\LoadScoreboard.java|1415|1440|getObjectiveInDisplaySlot|method|net.minecraft.scoreboard.Scoreboard|getObjectiveInDisplaySlot|(I)Lnet/minecraft/scoreboard/ScoreObjective;
+      @|lagg\LoadScoreboard.java|1510|1530|mainscoreboardmethod|method|lagg.LoadScoreboard|mainscoreboardmethod|(Lnet/minecraft/scoreboard/ScoreObjective;Lnet/minecraft/client/gui/ScaledResolution;)V
+   Method End: othermethod()V
+   Method Start: mainscoreboardmethod(Lnet/minecraft/scoreboard/ScoreObjective;Lnet/minecraft/client/gui/ScaledResolution;)V
+      @|lagg\LoadScoreboard.java|1599|1619|mainscoreboardmethod|method|lagg.LoadScoreboard|mainscoreboardmethod|(Lnet/minecraft/scoreboard/ScoreObjective;Lnet/minecraft/client/gui/ScaledResolution;)V
+      @|lagg\LoadScoreboard.java|1620|1634|ScoreObjective|class|net.minecraft.scoreboard.ScoreObjective
+      @|lagg\LoadScoreboard.java|1635|1646|p_180475_1_|param|lagg.LoadScoreboard|mainscoreboardmethod|(Lnet/minecraft/scoreboard/ScoreObjective;Lnet/minecraft/client/gui/ScaledResolution;)V|p_180475_1_|0
+      @|lagg\LoadScoreboard.java|1648|1664|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution
+      @|lagg\LoadScoreboard.java|1665|1676|p_180475_2_|param|lagg.LoadScoreboard|mainscoreboardmethod|(Lnet/minecraft/scoreboard/ScoreObjective;Lnet/minecraft/client/gui/ScaledResolution;)V|p_180475_2_|1
+      @|lagg\LoadScoreboard.java|1692|1702|Scoreboard|class|net.minecraft.scoreboard.Scoreboard
+      @|lagg\LoadScoreboard.java|1716|1727|p_180475_1_|param|lagg.LoadScoreboard|mainscoreboardmethod|(Lnet/minecraft/scoreboard/ScoreObjective;Lnet/minecraft/client/gui/ScaledResolution;)V|p_180475_1_|0
+      @|lagg\LoadScoreboard.java|1728|1741|getScoreboard|method|net.minecraft.scoreboard.ScoreObjective|getScoreboard|()Lnet/minecraft/scoreboard/Scoreboard;
+      @|lagg\LoadScoreboard.java|1753|1763|Collection|class|java.util.Collection
+      @|lagg\LoadScoreboard.java|1788|1803|getSortedScores|method|net.minecraft.scoreboard.Scoreboard|getSortedScores|(Lnet/minecraft/scoreboard/ScoreObjective;)Ljava/util/Collection;
+      @|lagg\LoadScoreboard.java|1804|1815|p_180475_1_|param|lagg.LoadScoreboard|mainscoreboardmethod|(Lnet/minecraft/scoreboard/ScoreObjective;Lnet/minecraft/client/gui/ScaledResolution;)V|p_180475_1_|0
+      @|lagg\LoadScoreboard.java|1826|1835|ArrayList|class|java.util.ArrayList
+      @|lagg\LoadScoreboard.java|1848|1853|Lists|class|com.google.common.collect.Lists
+      @|lagg\LoadScoreboard.java|1854|1866|newArrayList|method|com.google.common.collect.Lists|newArrayList|(Ljava/lang/Iterable;)Ljava/util/ArrayList;
+      @|lagg\LoadScoreboard.java|1867|1876|Iterables|class|com.google.common.collect.Iterables
+      @|lagg\LoadScoreboard.java|1877|1883|filter|method|com.google.common.collect.Iterables|filter|(Ljava/lang/Iterable;Lcom/google/common/base/Predicate;)Ljava/lang/Iterable;
+      @|lagg\LoadScoreboard.java|1900|1909|Predicate|class|com.google.common.base.Predicate
+      Anon Class Start: lagg.LoadScoreboard$1
+         @|lagg\LoadScoreboard.java|1955|1961|String|class|java.lang.String
+         @|lagg\LoadScoreboard.java|1962|1969|__OBFID|field|lagg.LoadScoreboard$1|__OBFID|CL_00001958
+         Method Start: func_178903_a(Lnet/minecraft/scoreboard/Score;)Z
+            @|lagg\LoadScoreboard.java|2014|2027|func_178903_a|method|lagg.LoadScoreboard$1|func_178903_a|(Lnet/minecraft/scoreboard/Score;)Z
+            @|lagg\LoadScoreboard.java|2028|2033|Score|class|net.minecraft.scoreboard.Score
+            @|lagg\LoadScoreboard.java|2034|2045|p_178903_1_|param|lagg.LoadScoreboard$1|func_178903_a|(Lnet/minecraft/scoreboard/Score;)Z|p_178903_1_|0
+            @|lagg\LoadScoreboard.java|2084|2095|p_178903_1_|param|lagg.LoadScoreboard$1|func_178903_a|(Lnet/minecraft/scoreboard/Score;)Z|p_178903_1_|0
+            @|lagg\LoadScoreboard.java|2096|2109|getPlayerName|method|net.minecraft.scoreboard.Score|getPlayerName|()Ljava/lang/String;
+            @|lagg\LoadScoreboard.java|2124|2135|p_178903_1_|param|lagg.LoadScoreboard$1|func_178903_a|(Lnet/minecraft/scoreboard/Score;)Z|p_178903_1_|0
+            @|lagg\LoadScoreboard.java|2136|2149|getPlayerName|method|net.minecraft.scoreboard.Score|getPlayerName|()Ljava/lang/String;
+            @|lagg\LoadScoreboard.java|2152|2162|startsWith|method|java.lang.String|startsWith|(Ljava/lang/String;)Z
+         Method End: func_178903_a(Lnet/minecraft/scoreboard/Score;)Z
+         Method Start: apply(Ljava/lang/Object;)Z
+            @|lagg\LoadScoreboard.java|2210|2215|apply|method|com.google.common.base.Predicate|apply|(Ljava/lang/Object;)Z
+            @|lagg\LoadScoreboard.java|2216|2222|Object|class|java.lang.Object
+            @|lagg\LoadScoreboard.java|2223|2233|p_apply_1_|param|lagg.LoadScoreboard$1|apply|(Ljava/lang/Object;)Z|p_apply_1_|0
+            @|lagg\LoadScoreboard.java|2277|2290|func_178903_a|method|lagg.LoadScoreboard$1|func_178903_a|(Lnet/minecraft/scoreboard/Score;)Z
+            @|lagg\LoadScoreboard.java|2292|2297|Score|class|net.minecraft.scoreboard.Score
+            @|lagg\LoadScoreboard.java|2298|2308|p_apply_1_|param|lagg.LoadScoreboard$1|apply|(Ljava/lang/Object;)Z|p_apply_1_|0
+         Method End: apply(Ljava/lang/Object;)Z
+      Anon Class End: lagg.LoadScoreboard$1
+      @|lagg\LoadScoreboard.java|2346|2355|ArrayList|class|java.util.ArrayList
+      @|lagg\LoadScoreboard.java|2391|2395|size|method|java.util.Collection|size|()I
+      @|lagg\LoadScoreboard.java|2439|2444|Lists|class|com.google.common.collect.Lists
+      @|lagg\LoadScoreboard.java|2445|2457|newArrayList|method|com.google.common.collect.Lists|newArrayList|(Ljava/lang/Iterable;)Ljava/util/ArrayList;
+      @|lagg\LoadScoreboard.java|2458|2467|Iterables|class|com.google.common.collect.Iterables
+      @|lagg\LoadScoreboard.java|2468|2472|skip|method|com.google.common.collect.Iterables|skip|(Ljava/lang/Iterable;I)Ljava/lang/Iterable;
+      @|lagg\LoadScoreboard.java|2495|2499|size|method|java.util.Collection|size|()I
+      @|lagg\LoadScoreboard.java|2611|2624|func_175179_f|method|lagg.LoadScoreboard|func_175179_f|()Lnet/minecraft/client/gui/FontRenderer;
+      @|lagg\LoadScoreboard.java|2627|2641|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|lagg\LoadScoreboard.java|2642|2653|p_180475_1_|param|lagg.LoadScoreboard|mainscoreboardmethod|(Lnet/minecraft/scoreboard/ScoreObjective;Lnet/minecraft/client/gui/ScaledResolution;)V|p_180475_1_|0
+      @|lagg\LoadScoreboard.java|2654|2668|getDisplayName|method|net.minecraft.scoreboard.ScoreObjective|getDisplayName|()Ljava/lang/String;
+      @|lagg\LoadScoreboard.java|2681|2687|String|class|java.lang.String
+      @|lagg\LoadScoreboard.java|2705|2713|Iterator|class|java.util.Iterator
+      @|lagg\LoadScoreboard.java|2736|2744|iterator|method|java.lang.Iterable|iterator|()Ljava/util/Iterator;
+      @|lagg\LoadScoreboard.java|2757|2764|hasNext|method|java.util.Iterator|hasNext|()Z
+      @|lagg\LoadScoreboard.java|2772|2776|Math|class|java.lang.Math
+      @|lagg\LoadScoreboard.java|2777|2780|max|method|java.lang.Math|max|(II)I
+      @|lagg\LoadScoreboard.java|2789|2802|func_175179_f|method|lagg.LoadScoreboard|func_175179_f|()Lnet/minecraft/client/gui/FontRenderer;
+      @|lagg\LoadScoreboard.java|2805|2819|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|lagg\LoadScoreboard.java|2847|2852|Score|class|net.minecraft.scoreboard.Score
+      @|lagg\LoadScoreboard.java|2862|2867|Score|class|net.minecraft.scoreboard.Score
+      @|lagg\LoadScoreboard.java|2877|2881|next|method|java.util.Iterator|next|()Ljava/lang/Object;
+      @|lagg\LoadScoreboard.java|2897|2912|ScorePlayerTeam|class|net.minecraft.scoreboard.ScorePlayerTeam
+      @|lagg\LoadScoreboard.java|2942|2956|getPlayersTeam|method|net.minecraft.scoreboard.Scoreboard|getPlayersTeam|(Ljava/lang/String;)Lnet/minecraft/scoreboard/ScorePlayerTeam;
+      @|lagg\LoadScoreboard.java|2963|2976|getPlayerName|method|net.minecraft.scoreboard.Score|getPlayerName|()Ljava/lang/String;
+      @|lagg\LoadScoreboard.java|2997|3012|ScorePlayerTeam|class|net.minecraft.scoreboard.ScorePlayerTeam
+      @|lagg\LoadScoreboard.java|3013|3029|formatPlayerName|method|net.minecraft.scoreboard.ScorePlayerTeam|formatPlayerName|(Lnet/minecraft/scoreboard/Team;Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\LoadScoreboard.java|3053|3066|getPlayerName|method|net.minecraft.scoreboard.Score|getPlayerName|()Ljava/lang/String;
+      @|lagg\LoadScoreboard.java|3079|3097|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|lagg\LoadScoreboard.java|3098|3101|RED|field|net.minecraft.util.EnumChatFormatting|RED
+      @|lagg\LoadScoreboard.java|3110|3124|getScorePoints|method|net.minecraft.scoreboard.Score|getScorePoints|()I
+      @|lagg\LoadScoreboard.java|3167|3171|size|method|java.util.Collection|size|()I
+      @|lagg\LoadScoreboard.java|3181|3194|func_175179_f|method|lagg.LoadScoreboard|func_175179_f|()Lnet/minecraft/client/gui/FontRenderer;
+      @|lagg\LoadScoreboard.java|3197|3208|FONT_HEIGHT|field|net.minecraft.client.gui.FontRenderer|FONT_HEIGHT
+      @|lagg\LoadScoreboard.java|3227|3238|p_180475_2_|param|lagg.LoadScoreboard|mainscoreboardmethod|(Lnet/minecraft/scoreboard/ScoreObjective;Lnet/minecraft/client/gui/ScaledResolution;)V|p_180475_2_|1
+      @|lagg\LoadScoreboard.java|3239|3254|getScaledHeight|method|net.minecraft.client.gui.ScaledResolution|getScaledHeight|()I
+      @|lagg\LoadScoreboard.java|3309|3320|p_180475_2_|param|lagg.LoadScoreboard|mainscoreboardmethod|(Lnet/minecraft/scoreboard/ScoreObjective;Lnet/minecraft/client/gui/ScaledResolution;)V|p_180475_2_|1
+      @|lagg\LoadScoreboard.java|3321|3335|getScaledWidth|method|net.minecraft.client.gui.ScaledResolution|getScaledWidth|()I
+      @|lagg\LoadScoreboard.java|3375|3383|Iterator|class|java.util.Iterator
+      @|lagg\LoadScoreboard.java|3407|3415|iterator|method|java.lang.Iterable|iterator|()Ljava/util/Iterator;
+      @|lagg\LoadScoreboard.java|3445|3452|hasNext|method|java.util.Iterator|hasNext|()Z
+      @|lagg\LoadScoreboard.java|3478|3483|Score|class|net.minecraft.scoreboard.Score
+      @|lagg\LoadScoreboard.java|3494|3499|Score|class|net.minecraft.scoreboard.Score
+      @|lagg\LoadScoreboard.java|3510|3514|next|method|java.util.Iterator|next|()Ljava/lang/Object;
+      @|lagg\LoadScoreboard.java|3547|3562|ScorePlayerTeam|class|net.minecraft.scoreboard.ScorePlayerTeam
+      @|lagg\LoadScoreboard.java|3593|3607|getPlayersTeam|method|net.minecraft.scoreboard.Scoreboard|getPlayersTeam|(Ljava/lang/String;)Lnet/minecraft/scoreboard/ScorePlayerTeam;
+      @|lagg\LoadScoreboard.java|3615|3628|getPlayerName|method|net.minecraft.scoreboard.Score|getPlayerName|()Ljava/lang/String;
+      @|lagg\LoadScoreboard.java|3645|3651|String|class|java.lang.String
+      @|lagg\LoadScoreboard.java|3657|3672|ScorePlayerTeam|class|net.minecraft.scoreboard.ScorePlayerTeam
+      @|lagg\LoadScoreboard.java|3673|3689|formatPlayerName|method|net.minecraft.scoreboard.ScorePlayerTeam|formatPlayerName|(Lnet/minecraft/scoreboard/Team;Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\LoadScoreboard.java|3715|3728|getPlayerName|method|net.minecraft.scoreboard.Score|getPlayerName|()Ljava/lang/String;
+      @|lagg\LoadScoreboard.java|3745|3751|String|class|java.lang.String
+      @|lagg\LoadScoreboard.java|3757|3775|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|lagg\LoadScoreboard.java|3776|3779|RED|field|net.minecraft.util.EnumChatFormatting|RED
+      @|lagg\LoadScoreboard.java|3794|3808|getScorePoints|method|net.minecraft.scoreboard.Score|getScorePoints|()I
+      @|lagg\LoadScoreboard.java|3846|3859|func_175179_f|method|lagg.LoadScoreboard|func_175179_f|()Lnet/minecraft/client/gui/FontRenderer;
+      @|lagg\LoadScoreboard.java|3862|3873|FONT_HEIGHT|field|net.minecraft.client.gui.FontRenderer|FONT_HEIGHT
+      @|lagg\LoadScoreboard.java|3895|3906|p_180475_2_|param|lagg.LoadScoreboard|mainscoreboardmethod|(Lnet/minecraft/scoreboard/ScoreObjective;Lnet/minecraft/client/gui/ScaledResolution;)V|p_180475_2_|1
+      @|lagg\LoadScoreboard.java|3907|3921|getScaledWidth|method|net.minecraft.client.gui.ScaledResolution|getScaledWidth|()I
+      @|lagg\LoadScoreboard.java|4034|4038|Main|class|lagg.Main
+      @|lagg\LoadScoreboard.java|4039|4049|scoreboard|field|lagg.Main|scoreboard
+      @|lagg\LoadScoreboard.java|4050|4053|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|lagg\LoadScoreboard.java|4310|4314|size|method|java.util.Collection|size|()I
+      @|lagg\LoadScoreboard.java|4348|4354|String|class|java.lang.String
+      @|lagg\LoadScoreboard.java|4360|4371|p_180475_1_|param|lagg.LoadScoreboard|mainscoreboardmethod|(Lnet/minecraft/scoreboard/ScoreObjective;Lnet/minecraft/client/gui/ScaledResolution;)V|p_180475_1_|0
+      @|lagg\LoadScoreboard.java|4372|4386|getDisplayName|method|net.minecraft.scoreboard.ScoreObjective|getDisplayName|()Ljava/lang/String;
+   Method End: mainscoreboardmethod(Lnet/minecraft/scoreboard/ScoreObjective;Lnet/minecraft/client/gui/ScaledResolution;)V
+   Method Start: func_175179_f()Lnet/minecraft/client/gui/FontRenderer;
+      @|lagg\LoadScoreboard.java|4810|4823|func_175179_f|method|lagg.LoadScoreboard|func_175179_f|()Lnet/minecraft/client/gui/FontRenderer;
+      @|lagg\LoadScoreboard.java|4797|4809|FontRenderer|class|net.minecraft.client.gui.FontRenderer
+      @|lagg\LoadScoreboard.java|4847|4856|Minecraft|class|net.minecraft.client.Minecraft
+      @|lagg\LoadScoreboard.java|4857|4869|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|lagg\LoadScoreboard.java|4872|4887|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+   Method End: func_175179_f()Lnet/minecraft/client/gui/FontRenderer;
+Class End  : lagg.LoadScoreboard
+endProcessing lagg\LoadScoreboard.java
+
+processing lagg\LoadTab.java
+@|lagg\LoadTab.java|8|12|lagg|package|lagg|(file)
+Class Start: lagg.LoadTab
+   @|lagg\LoadTab.java|1432|1440|Ordering|class|com.google.common.collect.Ordering
+   @|lagg\LoadTab.java|1441|1455|field_175252_a|field|lagg.LoadTab|field_175252_a|
+   @|lagg\LoadTab.java|1458|1466|Ordering|class|com.google.common.collect.Ordering
+   @|lagg\LoadTab.java|1467|1471|from|method|com.google.common.collect.Ordering|from|(Ljava/util/Comparator;)Lcom/google/common/collect/Ordering;
+   @|lagg\LoadTab.java|1476|1500|LoadTab.PlayerComparator|class|lagg.LoadTab.PlayerComparator
+   @|lagg\LoadTab.java|1527|1536|Minecraft|class|net.minecraft.client.Minecraft
+   @|lagg\LoadTab.java|1537|1551|field_175250_f|field|lagg.LoadTab|field_175250_f|
+   @|lagg\LoadTab.java|1554|1563|Minecraft|class|net.minecraft.client.Minecraft
+   @|lagg\LoadTab.java|1564|1576|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+   @|lagg\LoadTab.java|1598|1607|GuiIngame|class|net.minecraft.client.gui.GuiIngame
+   @|lagg\LoadTab.java|1608|1622|field_175251_g|field|lagg.LoadTab|field_175251_g|
+   @|lagg\LoadTab.java|1625|1634|Minecraft|class|net.minecraft.client.Minecraft
+   @|lagg\LoadTab.java|1635|1647|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+   @|lagg\LoadTab.java|1650|1659|ingameGUI|field|net.minecraft.client.Minecraft|ingameGUI
+   @|lagg\LoadTab.java|1673|1687|IChatComponent|class|net.minecraft.util.IChatComponent
+   @|lagg\LoadTab.java|1688|1694|footer|field|lagg.LoadTab|footer|
+   @|lagg\LoadTab.java|1708|1722|IChatComponent|class|net.minecraft.util.IChatComponent
+   @|lagg\LoadTab.java|1723|1729|header|field|lagg.LoadTab|header|
+   @|lagg\LoadTab.java|1748|1762|field_175253_j|field|lagg.LoadTab|field_175253_j|
+   @|lagg\LoadTab.java|1789|1795|String|class|java.lang.String
+   @|lagg\LoadTab.java|1779|1788|ArrayList|class|java.util.ArrayList
+   @|lagg\LoadTab.java|1797|1810|tabplayerlist|field|lagg.LoadTab|tabplayerlist|
+   @|lagg\LoadTab.java|1826|1845|GuiPlayerTabOverlay|class|net.minecraft.client.gui.GuiPlayerTabOverlay
+   @|lagg\LoadTab.java|1846|1863|overlayPlayerList|field|lagg.LoadTab|overlayPlayerList|
+   @|lagg\LoadTab.java|1870|1889|GuiPlayerTabOverlay|class|net.minecraft.client.gui.GuiPlayerTabOverlay
+   @|lagg\LoadTab.java|1890|1899|Minecraft|class|net.minecraft.client.Minecraft
+   @|lagg\LoadTab.java|1900|1912|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+   @|lagg\LoadTab.java|1915|1924|Minecraft|class|net.minecraft.client.Minecraft
+   @|lagg\LoadTab.java|1925|1937|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+   @|lagg\LoadTab.java|1940|1949|ingameGUI|field|net.minecraft.client.Minecraft|ingameGUI
+   @|lagg\LoadTab.java|1976|1992|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|lagg\LoadTab.java|1993|1998|icons|field|lagg.LoadTab|icons|
+   @|lagg\LoadTab.java|2005|2021|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|lagg\LoadTab.java|2069|2075|zLevel|field|lagg.LoadTab|zLevel|
+   @|lagg\LoadTab.java|2078|2083|Float|class|java.lang.Float
+   @|lagg\LoadTab.java|2084|2093|MAX_VALUE|field|java.lang.Float|MAX_VALUE
+   Method Start: LoadTab()V
+      @|lagg\LoadTab.java|2111|2118|LoadTab|method|lagg.LoadTab|LoadTab|()V
+   Method End: LoadTab()V
+   Method Start: func_175243_a(Lnet/minecraft/client/network/NetworkPlayerInfo;)Ljava/lang/String;
+      @|lagg\LoadTab.java|2147|2160|func_175243_a|method|lagg.LoadTab|func_175243_a|(Lnet/minecraft/client/network/NetworkPlayerInfo;)Ljava/lang/String;
+      @|lagg\LoadTab.java|2140|2146|String|class|java.lang.String
+      @|lagg\LoadTab.java|2161|2178|NetworkPlayerInfo|class|net.minecraft.client.network.NetworkPlayerInfo
+      @|lagg\LoadTab.java|2179|2190|p_175243_1_|param|lagg.LoadTab|func_175243_a|(Lnet/minecraft/client/network/NetworkPlayerInfo;)Ljava/lang/String;|p_175243_1_|0
+      @|lagg\LoadTab.java|2213|2224|p_175243_1_|param|lagg.LoadTab|func_175243_a|(Lnet/minecraft/client/network/NetworkPlayerInfo;)Ljava/lang/String;|p_175243_1_|0
+      @|lagg\LoadTab.java|2225|2239|getDisplayName|method|net.minecraft.client.network.NetworkPlayerInfo|getDisplayName|()Lnet/minecraft/util/IChatComponent;
+      @|lagg\LoadTab.java|2252|2263|p_175243_1_|param|lagg.LoadTab|func_175243_a|(Lnet/minecraft/client/network/NetworkPlayerInfo;)Ljava/lang/String;|p_175243_1_|0
+      @|lagg\LoadTab.java|2264|2278|getDisplayName|method|net.minecraft.client.network.NetworkPlayerInfo|getDisplayName|()Lnet/minecraft/util/IChatComponent;
+      @|lagg\LoadTab.java|2281|2297|getFormattedText|method|net.minecraft.util.IChatComponent|getFormattedText|()Ljava/lang/String;
+      @|lagg\LoadTab.java|2302|2317|ScorePlayerTeam|class|net.minecraft.scoreboard.ScorePlayerTeam
+      @|lagg\LoadTab.java|2318|2334|formatPlayerName|method|net.minecraft.scoreboard.ScorePlayerTeam|formatPlayerName|(Lnet/minecraft/scoreboard/Team;Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\LoadTab.java|2335|2346|p_175243_1_|param|lagg.LoadTab|func_175243_a|(Lnet/minecraft/client/network/NetworkPlayerInfo;)Ljava/lang/String;|p_175243_1_|0
+      @|lagg\LoadTab.java|2347|2360|getPlayerTeam|method|net.minecraft.client.network.NetworkPlayerInfo|getPlayerTeam|()Lnet/minecraft/scoreboard/ScorePlayerTeam;
+      @|lagg\LoadTab.java|2364|2375|p_175243_1_|param|lagg.LoadTab|func_175243_a|(Lnet/minecraft/client/network/NetworkPlayerInfo;)Ljava/lang/String;|p_175243_1_|0
+      @|lagg\LoadTab.java|2376|2390|getGameProfile|method|net.minecraft.client.network.NetworkPlayerInfo|getGameProfile|()Lcom/mojang/authlib/GameProfile;
+      @|lagg\LoadTab.java|2393|2400|getName|method|com.mojang.authlib.GameProfile|getName|()Ljava/lang/String;
+   Method End: func_175243_a(Lnet/minecraft/client/network/NetworkPlayerInfo;)Ljava/lang/String;
+   Method Start: drawRect(IIIII)V
+      @|lagg\LoadTab.java|2439|2447|drawRect|method|lagg.LoadTab|drawRect|(IIIII)V
+      @|lagg\LoadTab.java|2452|2456|left|param|lagg.LoadTab|drawRect|(IIIII)V|left|0
+      @|lagg\LoadTab.java|2462|2465|top|param|lagg.LoadTab|drawRect|(IIIII)V|top|1
+      @|lagg\LoadTab.java|2471|2476|right|param|lagg.LoadTab|drawRect|(IIIII)V|right|2
+      @|lagg\LoadTab.java|2482|2488|bottom|param|lagg.LoadTab|drawRect|(IIIII)V|bottom|3
+      @|lagg\LoadTab.java|2494|2499|color|param|lagg.LoadTab|drawRect|(IIIII)V|color|4
+   Method End: drawRect(IIIII)V
+   Method Start: drawTexturedModalRect(FFIIII)V
+      @|lagg\LoadTab.java|2525|2546|drawTexturedModalRect|method|lagg.LoadTab|drawTexturedModalRect|(FFIIII)V
+      @|lagg\LoadTab.java|2553|2559|xCoord|param|lagg.LoadTab|drawTexturedModalRect|(FFIIII)V|xCoord|0
+      @|lagg\LoadTab.java|2567|2573|yCoord|param|lagg.LoadTab|drawTexturedModalRect|(FFIIII)V|yCoord|1
+      @|lagg\LoadTab.java|2579|2583|minU|param|lagg.LoadTab|drawTexturedModalRect|(FFIIII)V|minU|2
+      @|lagg\LoadTab.java|2589|2593|minV|param|lagg.LoadTab|drawTexturedModalRect|(FFIIII)V|minV|3
+      @|lagg\LoadTab.java|2599|2603|maxU|param|lagg.LoadTab|drawTexturedModalRect|(FFIIII)V|maxU|4
+      @|lagg\LoadTab.java|2609|2613|maxV|param|lagg.LoadTab|drawTexturedModalRect|(FFIIII)V|maxV|5
+   Method End: drawTexturedModalRect(FFIIII)V
+   Method Start: drawTexturedModalRect(IILnet/minecraft/client/renderer/texture/TextureAtlasSprite;II)V
+      @|lagg\LoadTab.java|2639|2660|drawTexturedModalRect|method|lagg.LoadTab|drawTexturedModalRect|(IILnet/minecraft/client/renderer/texture/TextureAtlasSprite;II)V
+      @|lagg\LoadTab.java|2665|2671|xCoord|param|lagg.LoadTab|drawTexturedModalRect|(IILnet/minecraft/client/renderer/texture/TextureAtlasSprite;II)V|xCoord|0
+      @|lagg\LoadTab.java|2677|2683|yCoord|param|lagg.LoadTab|drawTexturedModalRect|(IILnet/minecraft/client/renderer/texture/TextureAtlasSprite;II)V|yCoord|1
+      @|lagg\LoadTab.java|2685|2703|TextureAtlasSprite|class|net.minecraft.client.renderer.texture.TextureAtlasSprite
+      @|lagg\LoadTab.java|2704|2717|textureSprite|param|lagg.LoadTab|drawTexturedModalRect|(IILnet/minecraft/client/renderer/texture/TextureAtlasSprite;II)V|textureSprite|2
+      @|lagg\LoadTab.java|2723|2734|p_175175_4_|param|lagg.LoadTab|drawTexturedModalRect|(IILnet/minecraft/client/renderer/texture/TextureAtlasSprite;II)V|p_175175_4_|3
+      @|lagg\LoadTab.java|2740|2751|p_175175_5_|param|lagg.LoadTab|drawTexturedModalRect|(IILnet/minecraft/client/renderer/texture/TextureAtlasSprite;II)V|p_175175_5_|4
+   Method End: drawTexturedModalRect(IILnet/minecraft/client/renderer/texture/TextureAtlasSprite;II)V
+   Method Start: drawTabOverlay()V
+      @|lagg\LoadTab.java|2781|2795|drawTabOverlay|method|lagg.LoadTab|drawTabOverlay|()V
+      @|lagg\LoadTab.java|2813|2826|tabplayerlist|field|lagg.LoadTab|tabplayerlist
+      @|lagg\LoadTab.java|2833|2842|ArrayList|class|java.util.ArrayList
+      @|lagg\LoadTab.java|2843|2849|String|class|java.lang.String
+      @|lagg\LoadTab.java|2862|2875|func_175249_a|method|lagg.LoadTab|func_175249_a|(ILnet/minecraft/scoreboard/Scoreboard;Lnet/minecraft/scoreboard/ScoreObjective;)V
+      @|lagg\LoadTab.java|2881|2897|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution
+      @|lagg\LoadTab.java|2898|2907|Minecraft|class|net.minecraft.client.Minecraft
+      @|lagg\LoadTab.java|2908|2920|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|lagg\LoadTab.java|2925|2939|getScaledWidth|method|net.minecraft.client.gui.ScaledResolution|getScaledWidth|()I
+      @|lagg\LoadTab.java|2943|2952|Minecraft|class|net.minecraft.client.Minecraft
+      @|lagg\LoadTab.java|2953|2965|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|lagg\LoadTab.java|2968|2976|theWorld|field|net.minecraft.client.Minecraft|theWorld
+      @|lagg\LoadTab.java|2977|2990|getScoreboard|method|net.minecraft.world.World|getScoreboard|()Lnet/minecraft/scoreboard/Scoreboard;
+      @|lagg\LoadTab.java|2994|3003|Minecraft|class|net.minecraft.client.Minecraft
+      @|lagg\LoadTab.java|3004|3016|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|lagg\LoadTab.java|3019|3027|theWorld|field|net.minecraft.client.Minecraft|theWorld
+      @|lagg\LoadTab.java|3028|3041|getScoreboard|method|net.minecraft.world.World|getScoreboard|()Lnet/minecraft/scoreboard/Scoreboard;
+      @|lagg\LoadTab.java|3044|3069|getObjectiveInDisplaySlot|method|net.minecraft.scoreboard.Scoreboard|getObjectiveInDisplaySlot|(I)Lnet/minecraft/scoreboard/ScoreObjective;
+      @|lagg\LoadTab.java|3083|3087|Main|class|lagg.Main
+      @|lagg\LoadTab.java|3088|3098|namesInTab|field|lagg.Main|namesInTab
+      @|lagg\LoadTab.java|3106|3119|tabplayerlist|field|lagg.LoadTab|tabplayerlist
+   Method End: drawTabOverlay()V
+   Method Start: func_175249_a(ILnet/minecraft/scoreboard/Scoreboard;Lnet/minecraft/scoreboard/ScoreObjective;)V
+      @|lagg\LoadTab.java|3148|3161|func_175249_a|method|lagg.LoadTab|func_175249_a|(ILnet/minecraft/scoreboard/Scoreboard;Lnet/minecraft/scoreboard/ScoreObjective;)V
+      @|lagg\LoadTab.java|3166|3177|p_175249_1_|param|lagg.LoadTab|func_175249_a|(ILnet/minecraft/scoreboard/Scoreboard;Lnet/minecraft/scoreboard/ScoreObjective;)V|p_175249_1_|0
+      @|lagg\LoadTab.java|3179|3189|Scoreboard|class|net.minecraft.scoreboard.Scoreboard
+      @|lagg\LoadTab.java|3190|3201|p_175249_2_|param|lagg.LoadTab|func_175249_a|(ILnet/minecraft/scoreboard/Scoreboard;Lnet/minecraft/scoreboard/ScoreObjective;)V|p_175249_2_|1
+      @|lagg\LoadTab.java|3203|3217|ScoreObjective|class|net.minecraft.scoreboard.ScoreObjective
+      @|lagg\LoadTab.java|3218|3229|p_175249_3_|param|lagg.LoadTab|func_175249_a|(ILnet/minecraft/scoreboard/Scoreboard;Lnet/minecraft/scoreboard/ScoreObjective;)V|p_175249_3_|2
+      @|lagg\LoadTab.java|3243|3256|tabplayerlist|field|lagg.LoadTab|tabplayerlist
+      @|lagg\LoadTab.java|3263|3272|ArrayList|class|java.util.ArrayList
+      @|lagg\LoadTab.java|3273|3279|String|class|java.lang.String
+      @|lagg\LoadTab.java|3292|3312|NetHandlerPlayClient|class|net.minecraft.client.network.NetHandlerPlayClient
+      @|lagg\LoadTab.java|3341|3355|field_175250_f|field|lagg.LoadTab|field_175250_f
+      @|lagg\LoadTab.java|3356|3365|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|lagg\LoadTab.java|3366|3375|sendQueue|field|net.minecraft.client.entity.EntityPlayerSP|sendQueue
+      @|lagg\LoadTab.java|3385|3389|List|class|java.util.List
+      @|lagg\LoadTab.java|3400|3414|field_175252_a|field|lagg.LoadTab|field_175252_a
+      @|lagg\LoadTab.java|3415|3425|sortedCopy|method|com.google.common.collect.Ordering|sortedCopy|(Ljava/lang/Iterable;)Ljava/util/List;
+      @|lagg\LoadTab.java|3447|3463|getPlayerInfoMap|method|net.minecraft.client.network.NetHandlerPlayClient|getPlayerInfoMap|()Ljava/util/Collection;
+      @|lagg\LoadTab.java|3514|3522|Iterator|class|java.util.Iterator
+      @|lagg\LoadTab.java|3542|3550|iterator|method|java.lang.Iterable|iterator|()Ljava/util/Iterator;
+      @|lagg\LoadTab.java|3594|3601|hasNext|method|java.util.Iterator|hasNext|()Z
+      @|lagg\LoadTab.java|3627|3644|NetworkPlayerInfo|class|net.minecraft.client.network.NetworkPlayerInfo
+      @|lagg\LoadTab.java|3666|3683|NetworkPlayerInfo|class|net.minecraft.client.network.NetworkPlayerInfo
+      @|lagg\LoadTab.java|3693|3697|next|method|java.util.Iterator|next|()Ljava/lang/Object;
+      @|lagg\LoadTab.java|3722|3736|field_175250_f|field|lagg.LoadTab|field_175250_f
+      @|lagg\LoadTab.java|3737|3752|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|lagg\LoadTab.java|3753|3767|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|lagg\LoadTab.java|3773|3786|func_175243_a|method|lagg.LoadTab|func_175243_a|(Lnet/minecraft/client/network/NetworkPlayerInfo;)Ljava/lang/String;
+      @|lagg\LoadTab.java|3824|3828|Math|class|java.lang.Math
+      @|lagg\LoadTab.java|3829|3832|max|method|java.lang.Math|max|(II)I
+      @|lagg\LoadTab.java|3857|3868|p_175249_3_|param|lagg.LoadTab|func_175249_a|(ILnet/minecraft/scoreboard/Scoreboard;Lnet/minecraft/scoreboard/ScoreObjective;)V|p_175249_3_|2
+      @|lagg\LoadTab.java|3880|3891|p_175249_3_|param|lagg.LoadTab|func_175249_a|(ILnet/minecraft/scoreboard/Scoreboard;Lnet/minecraft/scoreboard/ScoreObjective;)V|p_175249_3_|2
+      @|lagg\LoadTab.java|3892|3905|getRenderType|method|net.minecraft.scoreboard.ScoreObjective|getRenderType|()Lnet/minecraft/scoreboard/IScoreObjectiveCriteria$EnumRenderType;
+      @|lagg\LoadTab.java|3911|3949|IScoreObjectiveCriteria.EnumRenderType|class|net.minecraft.scoreboard.IScoreObjectiveCriteria.EnumRenderType
+      @|lagg\LoadTab.java|3950|3956|HEARTS|field|net.minecraft.scoreboard.IScoreObjectiveCriteria.EnumRenderType|HEARTS
+      @|lagg\LoadTab.java|3997|4011|field_175250_f|field|lagg.LoadTab|field_175250_f
+      @|lagg\LoadTab.java|4012|4027|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|lagg\LoadTab.java|4028|4042|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|lagg\LoadTab.java|4049|4060|p_175249_2_|param|lagg.LoadTab|func_175249_a|(ILnet/minecraft/scoreboard/Scoreboard;Lnet/minecraft/scoreboard/ScoreObjective;)V|p_175249_2_|1
+      @|lagg\LoadTab.java|4061|4082|getValueFromObjective|method|net.minecraft.scoreboard.Scoreboard|getValueFromObjective|(Ljava/lang/String;Lnet/minecraft/scoreboard/ScoreObjective;)Lnet/minecraft/scoreboard/Score;
+      @|lagg\LoadTab.java|4101|4115|getGameProfile|method|net.minecraft.client.network.NetworkPlayerInfo|getGameProfile|()Lcom/mojang/authlib/GameProfile;
+      @|lagg\LoadTab.java|4118|4125|getName|method|com.mojang.authlib.GameProfile|getName|()Ljava/lang/String;
+      @|lagg\LoadTab.java|4129|4140|p_175249_3_|param|lagg.LoadTab|func_175249_a|(ILnet/minecraft/scoreboard/Scoreboard;Lnet/minecraft/scoreboard/ScoreObjective;)V|p_175249_3_|2
+      @|lagg\LoadTab.java|4142|4156|getScorePoints|method|net.minecraft.scoreboard.Score|getScorePoints|()I
+      @|lagg\LoadTab.java|4181|4185|Math|class|java.lang.Math
+      @|lagg\LoadTab.java|4186|4189|max|method|java.lang.Math|max|(II)I
+      @|lagg\LoadTab.java|4242|4249|subList|method|java.util.List|subList|(II)Ljava/util/List;
+      @|lagg\LoadTab.java|4253|4257|Math|class|java.lang.Math
+      @|lagg\LoadTab.java|4258|4261|min|method|java.lang.Math|min|(II)I
+      @|lagg\LoadTab.java|4267|4271|size|method|java.util.Collection|size|()I
+      @|lagg\LoadTab.java|4303|4307|size|method|java.util.Collection|size|()I
+      @|lagg\LoadTab.java|4451|4465|field_175250_f|field|lagg.LoadTab|field_175250_f
+      @|lagg\LoadTab.java|4466|4491|isIntegratedServerRunning|method|net.minecraft.client.Minecraft|isIntegratedServerRunning|()Z
+      @|lagg\LoadTab.java|4502|4516|field_175250_f|field|lagg.LoadTab|field_175250_f
+      @|lagg\LoadTab.java|4517|4530|getNetHandler|method|net.minecraft.client.Minecraft|getNetHandler|()Lnet/minecraft/client/network/NetHandlerPlayClient;
+      @|lagg\LoadTab.java|4533|4550|getNetworkManager|method|net.minecraft.client.network.NetHandlerPlayClient|getNetworkManager|()Lnet/minecraft/network/NetworkManager;
+      @|lagg\LoadTab.java|4553|4567|getIsencrypted|method|net.minecraft.network.NetworkManager|getIsencrypted|()Z
+      @|lagg\LoadTab.java|4600|4611|p_175249_3_|param|lagg.LoadTab|func_175249_a|(ILnet/minecraft/scoreboard/Scoreboard;Lnet/minecraft/scoreboard/ScoreObjective;)V|p_175249_3_|2
+      @|lagg\LoadTab.java|4647|4658|p_175249_3_|param|lagg.LoadTab|func_175249_a|(ILnet/minecraft/scoreboard/Scoreboard;Lnet/minecraft/scoreboard/ScoreObjective;)V|p_175249_3_|2
+      @|lagg\LoadTab.java|4659|4672|getRenderType|method|net.minecraft.scoreboard.ScoreObjective|getRenderType|()Lnet/minecraft/scoreboard/IScoreObjectiveCriteria$EnumRenderType;
+      @|lagg\LoadTab.java|4678|4716|IScoreObjectiveCriteria.EnumRenderType|class|net.minecraft.scoreboard.IScoreObjectiveCriteria.EnumRenderType
+      @|lagg\LoadTab.java|4717|4723|HEARTS|field|net.minecraft.scoreboard.IScoreObjectiveCriteria.EnumRenderType|HEARTS
+      @|lagg\LoadTab.java|4928|4932|Math|class|java.lang.Math
+      @|lagg\LoadTab.java|4933|4936|min|method|java.lang.Math|min|(II)I
+      @|lagg\LoadTab.java|4973|4984|p_175249_1_|param|lagg.LoadTab|func_175249_a|(ILnet/minecraft/scoreboard/Scoreboard;Lnet/minecraft/scoreboard/ScoreObjective;)V|p_175249_1_|0
+      @|lagg\LoadTab.java|5013|5024|p_175249_1_|param|lagg.LoadTab|func_175249_a|(ILnet/minecraft/scoreboard/Scoreboard;Lnet/minecraft/scoreboard/ScoreObjective;)V|p_175249_1_|0
+      @|lagg\LoadTab.java|5127|5131|List|class|java.util.List
+      @|lagg\LoadTab.java|5157|5161|List|class|java.util.List
+      @|lagg\LoadTab.java|5187|5195|Iterator|class|java.util.Iterator
+      @|lagg\LoadTab.java|5218|5224|String|class|java.lang.String
+      @|lagg\LoadTab.java|5246|5252|header|field|lagg.LoadTab|header
+      @|lagg\LoadTab.java|5297|5311|field_175250_f|field|lagg.LoadTab|field_175250_f
+      @|lagg\LoadTab.java|5312|5327|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|lagg\LoadTab.java|5328|5354|listFormattedStringToWidth|method|net.minecraft.client.gui.FontRenderer|listFormattedStringToWidth|(Ljava/lang/String;I)Ljava/util/List;
+      @|lagg\LoadTab.java|5360|5366|header|field|lagg.LoadTab|header
+      @|lagg\LoadTab.java|5367|5383|getFormattedText|method|net.minecraft.util.IChatComponent|getFormattedText|()Ljava/lang/String;
+      @|lagg\LoadTab.java|5387|5398|p_175249_1_|param|lagg.LoadTab|func_175249_a|(ILnet/minecraft/scoreboard/Scoreboard;Lnet/minecraft/scoreboard/ScoreObjective;)V|p_175249_1_|0
+      @|lagg\LoadTab.java|5442|5450|iterator|method|java.lang.Iterable|iterator|()Ljava/util/Iterator;
+      @|lagg\LoadTab.java|5464|5471|hasNext|method|java.util.Iterator|hasNext|()Z
+      @|lagg\LoadTab.java|5480|5484|Math|class|java.lang.Math
+      @|lagg\LoadTab.java|5485|5488|max|method|java.lang.Math|max|(II)I
+      @|lagg\LoadTab.java|5498|5512|field_175250_f|field|lagg.LoadTab|field_175250_f
+      @|lagg\LoadTab.java|5513|5528|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|lagg\LoadTab.java|5529|5543|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|lagg\LoadTab.java|5584|5590|String|class|java.lang.String
+      @|lagg\LoadTab.java|5601|5605|next|method|java.util.Iterator|next|()Ljava/lang/Object;
+      @|lagg\LoadTab.java|5651|5657|footer|field|lagg.LoadTab|footer
+      @|lagg\LoadTab.java|5702|5716|field_175250_f|field|lagg.LoadTab|field_175250_f
+      @|lagg\LoadTab.java|5717|5732|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|lagg\LoadTab.java|5733|5759|listFormattedStringToWidth|method|net.minecraft.client.gui.FontRenderer|listFormattedStringToWidth|(Ljava/lang/String;I)Ljava/util/List;
+      @|lagg\LoadTab.java|5765|5771|footer|field|lagg.LoadTab|footer
+      @|lagg\LoadTab.java|5772|5788|getFormattedText|method|net.minecraft.util.IChatComponent|getFormattedText|()Ljava/lang/String;
+      @|lagg\LoadTab.java|5792|5803|p_175249_1_|param|lagg.LoadTab|func_175249_a|(ILnet/minecraft/scoreboard/Scoreboard;Lnet/minecraft/scoreboard/ScoreObjective;)V|p_175249_1_|0
+      @|lagg\LoadTab.java|5847|5855|iterator|method|java.lang.Iterable|iterator|()Ljava/util/Iterator;
+      @|lagg\LoadTab.java|5869|5876|hasNext|method|java.util.Iterator|hasNext|()Z
+      @|lagg\LoadTab.java|5885|5889|Math|class|java.lang.Math
+      @|lagg\LoadTab.java|5890|5893|max|method|java.lang.Math|max|(II)I
+      @|lagg\LoadTab.java|5903|5917|field_175250_f|field|lagg.LoadTab|field_175250_f
+      @|lagg\LoadTab.java|5918|5933|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|lagg\LoadTab.java|5934|5948|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|lagg\LoadTab.java|5989|5995|String|class|java.lang.String
+      @|lagg\LoadTab.java|6006|6010|next|method|java.util.Iterator|next|()Ljava/lang/Object;
+      @|lagg\LoadTab.java|6309|6317|iterator|method|java.lang.Iterable|iterator|()Ljava/util/Iterator;
+      @|lagg\LoadTab.java|6331|6338|hasNext|method|java.util.Iterator|hasNext|()Z
+      @|lagg\LoadTab.java|6353|6367|field_175250_f|field|lagg.LoadTab|field_175250_f
+      @|lagg\LoadTab.java|6368|6383|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|lagg\LoadTab.java|6384|6395|FONT_HEIGHT|field|net.minecraft.client.gui.FontRenderer|FONT_HEIGHT
+      @|lagg\LoadTab.java|6432|6438|String|class|java.lang.String
+      @|lagg\LoadTab.java|6449|6453|next|method|java.util.Iterator|next|()Ljava/lang/Object;
+      @|lagg\LoadTab.java|6483|6497|field_175250_f|field|lagg.LoadTab|field_175250_f
+      @|lagg\LoadTab.java|6498|6513|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|lagg\LoadTab.java|6514|6528|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|lagg\LoadTab.java|7313|7317|size|method|java.util.Collection|size|()I
+      @|lagg\LoadTab.java|7351|7368|NetworkPlayerInfo|class|net.minecraft.client.network.NetworkPlayerInfo
+      @|lagg\LoadTab.java|7391|7408|NetworkPlayerInfo|class|net.minecraft.client.network.NetworkPlayerInfo
+      @|lagg\LoadTab.java|7414|7417|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|lagg\LoadTab.java|7439|7445|String|class|java.lang.String
+      @|lagg\LoadTab.java|7456|7469|func_175243_a|method|lagg.LoadTab|func_175243_a|(Lnet/minecraft/client/network/NetworkPlayerInfo;)Ljava/lang/String;
+      @|lagg\LoadTab.java|7771|7783|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|lagg\LoadTab.java|7804|7818|field_175250_f|field|lagg.LoadTab|field_175250_f
+      @|lagg\LoadTab.java|7819|7827|theWorld|field|net.minecraft.client.Minecraft|theWorld
+      @|lagg\LoadTab.java|7828|7849|getPlayerEntityByUUID|method|net.minecraft.world.World|getPlayerEntityByUUID|(Ljava/util/UUID;)Lnet/minecraft/entity/player/EntityPlayer;
+      @|lagg\LoadTab.java|7869|7883|getGameProfile|method|net.minecraft.client.network.NetworkPlayerInfo|getGameProfile|()Lcom/mojang/authlib/GameProfile;
+      @|lagg\LoadTab.java|7886|7891|getId|method|com.mojang.authlib.GameProfile|getId|()Ljava/util/UUID;
+      @|lagg\LoadTab.java|7958|7967|isWearing|method|net.minecraft.entity.player.EntityPlayer|isWearing|(Lnet/minecraft/entity/player/EnumPlayerModelParts;)Z
+      @|lagg\LoadTab.java|7968|7988|EnumPlayerModelParts|class|net.minecraft.entity.player.EnumPlayerModelParts
+      @|lagg\LoadTab.java|7989|7992|HAT|field|net.minecraft.entity.player.EnumPlayerModelParts|HAT
+      @|lagg\LoadTab.java|8235|8246|getGameType|method|net.minecraft.client.network.NetworkPlayerInfo|getGameType|()Lnet/minecraft/world/WorldSettings$GameType;
+      @|lagg\LoadTab.java|8252|8274|WorldSettings.GameType|class|net.minecraft.world.WorldSettings.GameType
+      @|lagg\LoadTab.java|8275|8284|SPECTATOR|field|net.minecraft.world.WorldSettings.GameType|SPECTATOR
+      @|lagg\LoadTab.java|8329|8347|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|lagg\LoadTab.java|8348|8354|ITALIC|field|net.minecraft.util.EnumChatFormatting|ITALIC
+      @|lagg\LoadTab.java|8505|8518|tabplayerlist|field|lagg.LoadTab|tabplayerlist
+      @|lagg\LoadTab.java|8519|8522|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|lagg\LoadTab.java|8720|8733|tabplayerlist|field|lagg.LoadTab|tabplayerlist
+      @|lagg\LoadTab.java|8734|8737|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|lagg\LoadTab.java|8821|8832|p_175249_3_|param|lagg.LoadTab|func_175249_a|(ILnet/minecraft/scoreboard/Scoreboard;Lnet/minecraft/scoreboard/ScoreObjective;)V|p_175249_3_|2
+      @|lagg\LoadTab.java|8863|8874|getGameType|method|net.minecraft.client.network.NetworkPlayerInfo|getGameType|()Lnet/minecraft/world/WorldSettings$GameType;
+      @|lagg\LoadTab.java|8880|8902|WorldSettings.GameType|class|net.minecraft.world.WorldSettings.GameType
+      @|lagg\LoadTab.java|8903|8912|SPECTATOR|field|net.minecraft.world.WorldSettings.GameType|SPECTATOR
+      @|lagg\LoadTab.java|9092|9098|String|class|java.lang.String
+      @|lagg\LoadTab.java|9140|9154|getGameProfile|method|net.minecraft.client.network.NetworkPlayerInfo|getGameProfile|()Lcom/mojang/authlib/GameProfile;
+      @|lagg\LoadTab.java|9157|9165|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|lagg\LoadTab.java|9198|9211|func_175247_a|method|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V
+      @|lagg\LoadTab.java|9212|9223|p_175249_3_|param|lagg.LoadTab|func_175249_a|(ILnet/minecraft/scoreboard/Scoreboard;Lnet/minecraft/scoreboard/ScoreObjective;)V|p_175249_3_|2
+      @|lagg\LoadTab.java|9248|9262|getGameProfile|method|net.minecraft.client.network.NetworkPlayerInfo|getGameProfile|()Lcom/mojang/authlib/GameProfile;
+      @|lagg\LoadTab.java|9265|9272|getName|method|com.mojang.authlib.GameProfile|getName|()Ljava/lang/String;
+      @|lagg\LoadTab.java|9331|9344|tabplayerlist|field|lagg.LoadTab|tabplayerlist
+      @|lagg\LoadTab.java|9345|9348|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|lagg\LoadTab.java|9368|9382|getGameProfile|method|net.minecraft.client.network.NetworkPlayerInfo|getGameProfile|()Lcom/mojang/authlib/GameProfile;
+      @|lagg\LoadTab.java|9385|9392|getName|method|com.mojang.authlib.GameProfile|getName|()Ljava/lang/String;
+      @|lagg\LoadTab.java|9459|9472|func_175245_a|method|lagg.LoadTab|func_175245_a|(IIILnet/minecraft/client/network/NetworkPlayerInfo;)V
+      @|lagg\LoadTab.java|9831|9839|iterator|method|java.lang.Iterable|iterator|()Ljava/util/Iterator;
+      @|lagg\LoadTab.java|9853|9860|hasNext|method|java.util.Iterator|hasNext|()Z
+      @|lagg\LoadTab.java|9875|9889|field_175250_f|field|lagg.LoadTab|field_175250_f
+      @|lagg\LoadTab.java|9890|9905|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|lagg\LoadTab.java|9906|9917|FONT_HEIGHT|field|net.minecraft.client.gui.FontRenderer|FONT_HEIGHT
+      @|lagg\LoadTab.java|9954|9960|String|class|java.lang.String
+      @|lagg\LoadTab.java|9971|9975|next|method|java.util.Iterator|next|()Ljava/lang/Object;
+      @|lagg\LoadTab.java|10005|10019|field_175250_f|field|lagg.LoadTab|field_175250_f
+      @|lagg\LoadTab.java|10020|10035|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|lagg\LoadTab.java|10036|10050|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|lagg\LoadTab.java|10205|10218|tabplayerlist|field|lagg.LoadTab|tabplayerlist
+      @|lagg\LoadTab.java|10219|10222|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+   Method End: func_175249_a(ILnet/minecraft/scoreboard/Scoreboard;Lnet/minecraft/scoreboard/ScoreObjective;)V
+   Method Start: func_175245_a(IIILnet/minecraft/client/network/NetworkPlayerInfo;)V
+      @|lagg\LoadTab.java|10277|10290|func_175245_a|method|lagg.LoadTab|func_175245_a|(IIILnet/minecraft/client/network/NetworkPlayerInfo;)V
+      @|lagg\LoadTab.java|10295|10306|p_175245_1_|param|lagg.LoadTab|func_175245_a|(IIILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175245_1_|0
+      @|lagg\LoadTab.java|10312|10323|p_175245_2_|param|lagg.LoadTab|func_175245_a|(IIILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175245_2_|1
+      @|lagg\LoadTab.java|10329|10340|p_175245_3_|param|lagg.LoadTab|func_175245_a|(IIILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175245_3_|2
+      @|lagg\LoadTab.java|10342|10359|NetworkPlayerInfo|class|net.minecraft.client.network.NetworkPlayerInfo
+      @|lagg\LoadTab.java|10360|10371|p_175245_4_|param|lagg.LoadTab|func_175245_a|(IIILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175245_4_|3
+      @|lagg\LoadTab.java|10586|10597|p_175245_4_|param|lagg.LoadTab|func_175245_a|(IIILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175245_4_|3
+      @|lagg\LoadTab.java|10598|10613|getResponseTime|method|net.minecraft.client.network.NetworkPlayerInfo|getResponseTime|()I
+      @|lagg\LoadTab.java|10678|10689|p_175245_4_|param|lagg.LoadTab|func_175245_a|(IIILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175245_4_|3
+      @|lagg\LoadTab.java|10690|10705|getResponseTime|method|net.minecraft.client.network.NetworkPlayerInfo|getResponseTime|()I
+      @|lagg\LoadTab.java|10772|10783|p_175245_4_|param|lagg.LoadTab|func_175245_a|(IIILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175245_4_|3
+      @|lagg\LoadTab.java|10784|10799|getResponseTime|method|net.minecraft.client.network.NetworkPlayerInfo|getResponseTime|()I
+      @|lagg\LoadTab.java|10866|10877|p_175245_4_|param|lagg.LoadTab|func_175245_a|(IIILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175245_4_|3
+      @|lagg\LoadTab.java|10878|10893|getResponseTime|method|net.minecraft.client.network.NetworkPlayerInfo|getResponseTime|()I
+      @|lagg\LoadTab.java|10960|10971|p_175245_4_|param|lagg.LoadTab|func_175245_a|(IIILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175245_4_|3
+      @|lagg\LoadTab.java|10972|10987|getResponseTime|method|net.minecraft.client.network.NetworkPlayerInfo|getResponseTime|()I
+      @|lagg\LoadTab.java|11105|11111|zLevel|field|lagg.LoadTab|zLevel
+      @|lagg\LoadTab.java|11253|11259|zLevel|field|lagg.LoadTab|zLevel
+   Method End: func_175245_a(IIILnet/minecraft/client/network/NetworkPlayerInfo;)V
+   Method Start: func_175247_a(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V
+      @|lagg\LoadTab.java|11295|11308|func_175247_a|method|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V
+      @|lagg\LoadTab.java|11309|11323|ScoreObjective|class|net.minecraft.scoreboard.ScoreObjective
+      @|lagg\LoadTab.java|11324|11335|p_175247_1_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_1_|0
+      @|lagg\LoadTab.java|11341|11352|p_175247_2_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_2_|1
+      @|lagg\LoadTab.java|11354|11360|String|class|java.lang.String
+      @|lagg\LoadTab.java|11361|11372|p_175247_3_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_3_|2
+      @|lagg\LoadTab.java|11378|11389|p_175247_4_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_4_|3
+      @|lagg\LoadTab.java|11395|11406|p_175247_5_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_5_|4
+      @|lagg\LoadTab.java|11408|11425|NetworkPlayerInfo|class|net.minecraft.client.network.NetworkPlayerInfo
+      @|lagg\LoadTab.java|11426|11437|p_175247_6_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_6_|5
+      @|lagg\LoadTab.java|11461|11472|p_175247_1_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_1_|0
+      @|lagg\LoadTab.java|11473|11486|getScoreboard|method|net.minecraft.scoreboard.ScoreObjective|getScoreboard|()Lnet/minecraft/scoreboard/Scoreboard;
+      @|lagg\LoadTab.java|11489|11510|getValueFromObjective|method|net.minecraft.scoreboard.Scoreboard|getValueFromObjective|(Ljava/lang/String;Lnet/minecraft/scoreboard/ScoreObjective;)Lnet/minecraft/scoreboard/Score;
+      @|lagg\LoadTab.java|11511|11522|p_175247_3_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_3_|2
+      @|lagg\LoadTab.java|11524|11535|p_175247_1_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_1_|0
+      @|lagg\LoadTab.java|11537|11551|getScorePoints|method|net.minecraft.scoreboard.Score|getScorePoints|()I
+      @|lagg\LoadTab.java|11568|11579|p_175247_1_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_1_|0
+      @|lagg\LoadTab.java|11580|11593|getRenderType|method|net.minecraft.scoreboard.ScoreObjective|getRenderType|()Lnet/minecraft/scoreboard/IScoreObjectiveCriteria$EnumRenderType;
+      @|lagg\LoadTab.java|11599|11637|IScoreObjectiveCriteria.EnumRenderType|class|net.minecraft.scoreboard.IScoreObjectiveCriteria.EnumRenderType
+      @|lagg\LoadTab.java|11638|11644|HEARTS|field|net.minecraft.scoreboard.IScoreObjectiveCriteria.EnumRenderType|HEARTS
+      @|lagg\LoadTab.java|11752|11766|field_175253_j|field|lagg.LoadTab|field_175253_j
+      @|lagg\LoadTab.java|11770|11781|p_175247_6_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_6_|5
+      @|lagg\LoadTab.java|11782|11795|func_178855_p|method|net.minecraft.client.network.NetworkPlayerInfo|func_178855_p|()J
+      @|lagg\LoadTab.java|11837|11848|p_175247_6_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_6_|5
+      @|lagg\LoadTab.java|11849|11862|func_178835_l|method|net.minecraft.client.network.NetworkPlayerInfo|func_178835_l|()I
+      @|lagg\LoadTab.java|11904|11915|p_175247_6_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_6_|5
+      @|lagg\LoadTab.java|11916|11929|func_178846_a|method|net.minecraft.client.network.NetworkPlayerInfo|func_178846_a|(J)V
+      @|lagg\LoadTab.java|11930|11939|Minecraft|class|net.minecraft.client.Minecraft
+      @|lagg\LoadTab.java|11940|11953|getSystemTime|method|net.minecraft.client.Minecraft|getSystemTime|()J
+      @|lagg\LoadTab.java|11978|11989|p_175247_6_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_6_|5
+      @|lagg\LoadTab.java|11990|12003|func_178844_b|method|net.minecraft.client.network.NetworkPlayerInfo|func_178844_b|(J)V
+      @|lagg\LoadTab.java|12016|12030|field_175251_g|field|lagg.LoadTab|field_175251_g
+      @|lagg\LoadTab.java|12031|12047|getUpdateCounter|method|net.minecraft.client.gui.GuiIngame|getUpdateCounter|()I
+      @|lagg\LoadTab.java|12105|12116|p_175247_6_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_6_|5
+      @|lagg\LoadTab.java|12117|12130|func_178835_l|method|net.minecraft.client.network.NetworkPlayerInfo|func_178835_l|()I
+      @|lagg\LoadTab.java|12172|12183|p_175247_6_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_6_|5
+      @|lagg\LoadTab.java|12184|12197|func_178846_a|method|net.minecraft.client.network.NetworkPlayerInfo|func_178846_a|(J)V
+      @|lagg\LoadTab.java|12198|12207|Minecraft|class|net.minecraft.client.Minecraft
+      @|lagg\LoadTab.java|12208|12221|getSystemTime|method|net.minecraft.client.Minecraft|getSystemTime|()J
+      @|lagg\LoadTab.java|12246|12257|p_175247_6_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_6_|5
+      @|lagg\LoadTab.java|12258|12271|func_178844_b|method|net.minecraft.client.network.NetworkPlayerInfo|func_178844_b|(J)V
+      @|lagg\LoadTab.java|12284|12298|field_175251_g|field|lagg.LoadTab|field_175251_g
+      @|lagg\LoadTab.java|12299|12315|getUpdateCounter|method|net.minecraft.client.gui.GuiIngame|getUpdateCounter|()I
+      @|lagg\LoadTab.java|12375|12384|Minecraft|class|net.minecraft.client.Minecraft
+      @|lagg\LoadTab.java|12385|12398|getSystemTime|method|net.minecraft.client.Minecraft|getSystemTime|()J
+      @|lagg\LoadTab.java|12403|12414|p_175247_6_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_6_|5
+      @|lagg\LoadTab.java|12415|12428|func_178847_n|method|net.minecraft.client.network.NetworkPlayerInfo|func_178847_n|()J
+      @|lagg\LoadTab.java|12447|12461|field_175253_j|field|lagg.LoadTab|field_175253_j
+      @|lagg\LoadTab.java|12465|12476|p_175247_6_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_6_|5
+      @|lagg\LoadTab.java|12477|12490|func_178855_p|method|net.minecraft.client.network.NetworkPlayerInfo|func_178855_p|()J
+      @|lagg\LoadTab.java|12524|12535|p_175247_6_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_6_|5
+      @|lagg\LoadTab.java|12536|12549|func_178836_b|method|net.minecraft.client.network.NetworkPlayerInfo|func_178836_b|(I)V
+      @|lagg\LoadTab.java|12570|12581|p_175247_6_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_6_|5
+      @|lagg\LoadTab.java|12582|12595|func_178857_c|method|net.minecraft.client.network.NetworkPlayerInfo|func_178857_c|(I)V
+      @|lagg\LoadTab.java|12616|12627|p_175247_6_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_6_|5
+      @|lagg\LoadTab.java|12628|12641|func_178846_a|method|net.minecraft.client.network.NetworkPlayerInfo|func_178846_a|(J)V
+      @|lagg\LoadTab.java|12642|12651|Minecraft|class|net.minecraft.client.Minecraft
+      @|lagg\LoadTab.java|12652|12665|getSystemTime|method|net.minecraft.client.Minecraft|getSystemTime|()J
+      @|lagg\LoadTab.java|12697|12708|p_175247_6_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_6_|5
+      @|lagg\LoadTab.java|12709|12722|func_178843_c|method|net.minecraft.client.network.NetworkPlayerInfo|func_178843_c|(J)V
+      @|lagg\LoadTab.java|12728|12742|field_175253_j|field|lagg.LoadTab|field_175253_j
+      @|lagg\LoadTab.java|12757|12768|p_175247_6_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_6_|5
+      @|lagg\LoadTab.java|12769|12782|func_178836_b|method|net.minecraft.client.network.NetworkPlayerInfo|func_178836_b|(I)V
+      @|lagg\LoadTab.java|12808|12818|MathHelper|class|net.minecraft.util.MathHelper
+      @|lagg\LoadTab.java|12819|12836|ceiling_float_int|method|net.minecraft.util.MathHelper|ceiling_float_int|(F)I
+      @|lagg\LoadTab.java|12844|12848|Math|class|java.lang.Math
+      @|lagg\LoadTab.java|12849|12852|max|method|java.lang.Math|max|(II)I
+      @|lagg\LoadTab.java|12856|12867|p_175247_6_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_6_|5
+      @|lagg\LoadTab.java|12868|12881|func_178860_m|method|net.minecraft.client.network.NetworkPlayerInfo|func_178860_m|()I
+      @|lagg\LoadTab.java|12915|12919|Math|class|java.lang.Math
+      @|lagg\LoadTab.java|12920|12923|max|method|java.lang.Math|max|(II)I
+      @|lagg\LoadTab.java|12924|12934|MathHelper|class|net.minecraft.util.MathHelper
+      @|lagg\LoadTab.java|12935|12952|ceiling_float_int|method|net.minecraft.util.MathHelper|ceiling_float_int|(F)I
+      @|lagg\LoadTab.java|12970|12974|Math|class|java.lang.Math
+      @|lagg\LoadTab.java|12975|12978|max|method|java.lang.Math|max|(II)I
+      @|lagg\LoadTab.java|12979|12989|MathHelper|class|net.minecraft.util.MathHelper
+      @|lagg\LoadTab.java|12990|13007|ceiling_float_int|method|net.minecraft.util.MathHelper|ceiling_float_int|(F)I
+      @|lagg\LoadTab.java|13016|13027|p_175247_6_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_6_|5
+      @|lagg\LoadTab.java|13028|13041|func_178860_m|method|net.minecraft.client.network.NetworkPlayerInfo|func_178860_m|()I
+      @|lagg\LoadTab.java|13084|13095|p_175247_6_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_6_|5
+      @|lagg\LoadTab.java|13096|13109|func_178858_o|method|net.minecraft.client.network.NetworkPlayerInfo|func_178858_o|()J
+      @|lagg\LoadTab.java|13125|13139|field_175251_g|field|lagg.LoadTab|field_175251_g
+      @|lagg\LoadTab.java|13140|13156|getUpdateCounter|method|net.minecraft.client.gui.GuiIngame|getUpdateCounter|()I
+      @|lagg\LoadTab.java|13163|13174|p_175247_6_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_6_|5
+      @|lagg\LoadTab.java|13175|13188|func_178858_o|method|net.minecraft.client.network.NetworkPlayerInfo|func_178858_o|()J
+      @|lagg\LoadTab.java|13204|13218|field_175251_g|field|lagg.LoadTab|field_175251_g
+      @|lagg\LoadTab.java|13219|13235|getUpdateCounter|method|net.minecraft.client.gui.GuiIngame|getUpdateCounter|()I
+      @|lagg\LoadTab.java|13321|13325|Math|class|java.lang.Math
+      @|lagg\LoadTab.java|13326|13329|min|method|java.lang.Math|min|(FF)F
+      @|lagg\LoadTab.java|13338|13349|p_175247_5_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_5_|4
+      @|lagg\LoadTab.java|13352|13363|p_175247_4_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_4_|3
+      @|lagg\LoadTab.java|13567|13588|drawTexturedModalRect|method|lagg.LoadTab|drawTexturedModalRect|(FFIIII)V
+      @|lagg\LoadTab.java|13596|13607|p_175247_4_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_4_|3
+      @|lagg\LoadTab.java|13632|13643|p_175247_2_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_2_|1
+      @|lagg\LoadTab.java|13793|13814|drawTexturedModalRect|method|lagg.LoadTab|drawTexturedModalRect|(FFIIII)V
+      @|lagg\LoadTab.java|13822|13833|p_175247_4_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_4_|3
+      @|lagg\LoadTab.java|13858|13869|p_175247_2_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_2_|1
+      @|lagg\LoadTab.java|14003|14014|p_175247_6_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_6_|5
+      @|lagg\LoadTab.java|14015|14028|func_178860_m|method|net.minecraft.client.network.NetworkPlayerInfo|func_178860_m|()I
+      @|lagg\LoadTab.java|14099|14120|drawTexturedModalRect|method|lagg.LoadTab|drawTexturedModalRect|(FFIIII)V
+      @|lagg\LoadTab.java|14128|14139|p_175247_4_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_4_|3
+      @|lagg\LoadTab.java|14164|14175|p_175247_2_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_2_|1
+      @|lagg\LoadTab.java|14268|14279|p_175247_6_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_6_|5
+      @|lagg\LoadTab.java|14280|14293|func_178860_m|method|net.minecraft.client.network.NetworkPlayerInfo|func_178860_m|()I
+      @|lagg\LoadTab.java|14364|14385|drawTexturedModalRect|method|lagg.LoadTab|drawTexturedModalRect|(FFIIII)V
+      @|lagg\LoadTab.java|14393|14404|p_175247_4_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_4_|3
+      @|lagg\LoadTab.java|14429|14440|p_175247_2_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_2_|1
+      @|lagg\LoadTab.java|14616|14637|drawTexturedModalRect|method|lagg.LoadTab|drawTexturedModalRect|(FFIIII)V
+      @|lagg\LoadTab.java|14645|14656|p_175247_4_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_4_|3
+      @|lagg\LoadTab.java|14681|14692|p_175247_2_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_2_|1
+      @|lagg\LoadTab.java|14856|14877|drawTexturedModalRect|method|lagg.LoadTab|drawTexturedModalRect|(FFIIII)V
+      @|lagg\LoadTab.java|14885|14896|p_175247_4_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_4_|3
+      @|lagg\LoadTab.java|14921|14932|p_175247_2_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_2_|1
+      @|lagg\LoadTab.java|15101|15111|MathHelper|class|net.minecraft.util.MathHelper
+      @|lagg\LoadTab.java|15112|15123|clamp_float|method|net.minecraft.util.MathHelper|clamp_float|(FFF)F
+      @|lagg\LoadTab.java|15265|15271|String|class|java.lang.String
+      @|lagg\LoadTab.java|15324|15335|p_175247_5_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_5_|4
+      @|lagg\LoadTab.java|15343|15357|field_175250_f|field|lagg.LoadTab|field_175250_f
+      @|lagg\LoadTab.java|15358|15373|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|lagg\LoadTab.java|15374|15388|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|lagg\LoadTab.java|15403|15414|p_175247_4_|param|lagg.LoadTab|func_175247_a|(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V|p_175247_4_|3
+      @|lagg\LoadTab.java|15789|15795|String|class|java.lang.String
+      @|lagg\LoadTab.java|15801|15819|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|lagg\LoadTab.java|15820|15826|YELLOW|field|net.minecraft.util.EnumChatFormatting|YELLOW
+   Method End: func_175247_a(Lnet/minecraft/scoreboard/ScoreObjective;ILjava/lang/String;IILnet/minecraft/client/network/NetworkPlayerInfo;)V
+   Class Start: lagg.LoadTab.PlayerComparator
+      @|lagg\LoadTab.java|16165|16171|String|class|java.lang.String
+      @|lagg\LoadTab.java|16172|16179|__OBFID|field|lagg.LoadTab.PlayerComparator|__OBFID|CL_00001941
+      Method Start: PlayerComparator()V
+         @|lagg\LoadTab.java|16218|16234|PlayerComparator|method|lagg.LoadTab.PlayerComparator|PlayerComparator|()V
+      Method End: PlayerComparator()V
+      Method Start: func_178952_a(Lnet/minecraft/client/network/NetworkPlayerInfo;Lnet/minecraft/client/network/NetworkPlayerInfo;)I
+         @|lagg\LoadTab.java|16264|16277|func_178952_a|method|lagg.LoadTab.PlayerComparator|func_178952_a|(Lnet/minecraft/client/network/NetworkPlayerInfo;Lnet/minecraft/client/network/NetworkPlayerInfo;)I
+         @|lagg\LoadTab.java|16278|16295|NetworkPlayerInfo|class|net.minecraft.client.network.NetworkPlayerInfo
+         @|lagg\LoadTab.java|16296|16307|p_178952_1_|param|lagg.LoadTab.PlayerComparator|func_178952_a|(Lnet/minecraft/client/network/NetworkPlayerInfo;Lnet/minecraft/client/network/NetworkPlayerInfo;)I|p_178952_1_|0
+         @|lagg\LoadTab.java|16309|16326|NetworkPlayerInfo|class|net.minecraft.client.network.NetworkPlayerInfo
+         @|lagg\LoadTab.java|16327|16338|p_178952_2_|param|lagg.LoadTab.PlayerComparator|func_178952_a|(Lnet/minecraft/client/network/NetworkPlayerInfo;Lnet/minecraft/client/network/NetworkPlayerInfo;)I|p_178952_2_|1
+         @|lagg\LoadTab.java|16370|16385|ScorePlayerTeam|class|net.minecraft.scoreboard.ScorePlayerTeam
+         @|lagg\LoadTab.java|16404|16415|p_178952_1_|param|lagg.LoadTab.PlayerComparator|func_178952_a|(Lnet/minecraft/client/network/NetworkPlayerInfo;Lnet/minecraft/client/network/NetworkPlayerInfo;)I|p_178952_1_|0
+         @|lagg\LoadTab.java|16416|16429|getPlayerTeam|method|net.minecraft.client.network.NetworkPlayerInfo|getPlayerTeam|()Lnet/minecraft/scoreboard/ScorePlayerTeam;
+         @|lagg\LoadTab.java|16449|16464|ScorePlayerTeam|class|net.minecraft.scoreboard.ScorePlayerTeam
+         @|lagg\LoadTab.java|16484|16495|p_178952_2_|param|lagg.LoadTab.PlayerComparator|func_178952_a|(Lnet/minecraft/client/network/NetworkPlayerInfo;Lnet/minecraft/client/network/NetworkPlayerInfo;)I|p_178952_2_|1
+         @|lagg\LoadTab.java|16496|16509|getPlayerTeam|method|net.minecraft.client.network.NetworkPlayerInfo|getPlayerTeam|()Lnet/minecraft/scoreboard/ScorePlayerTeam;
+         @|lagg\LoadTab.java|16536|16551|ComparisonChain|class|com.google.common.collect.ComparisonChain
+         @|lagg\LoadTab.java|16552|16557|start|method|com.google.common.collect.ComparisonChain|start|()Lcom/google/common/collect/ComparisonChain;
+         @|lagg\LoadTab.java|16560|16576|compareTrueFirst|method|com.google.common.collect.ComparisonChain|compareTrueFirst|(ZZ)Lcom/google/common/collect/ComparisonChain;
+         @|lagg\LoadTab.java|16577|16588|p_178952_1_|param|lagg.LoadTab.PlayerComparator|func_178952_a|(Lnet/minecraft/client/network/NetworkPlayerInfo;Lnet/minecraft/client/network/NetworkPlayerInfo;)I|p_178952_1_|0
+         @|lagg\LoadTab.java|16589|16600|getGameType|method|net.minecraft.client.network.NetworkPlayerInfo|getGameType|()Lnet/minecraft/world/WorldSettings$GameType;
+         @|lagg\LoadTab.java|16606|16628|WorldSettings.GameType|class|net.minecraft.world.WorldSettings.GameType
+         @|lagg\LoadTab.java|16629|16638|SPECTATOR|field|net.minecraft.world.WorldSettings.GameType|SPECTATOR
+         @|lagg\LoadTab.java|16640|16651|p_178952_2_|param|lagg.LoadTab.PlayerComparator|func_178952_a|(Lnet/minecraft/client/network/NetworkPlayerInfo;Lnet/minecraft/client/network/NetworkPlayerInfo;)I|p_178952_2_|1
+         @|lagg\LoadTab.java|16652|16663|getGameType|method|net.minecraft.client.network.NetworkPlayerInfo|getGameType|()Lnet/minecraft/world/WorldSettings$GameType;
+         @|lagg\LoadTab.java|16669|16691|WorldSettings.GameType|class|net.minecraft.world.WorldSettings.GameType
+         @|lagg\LoadTab.java|16692|16701|SPECTATOR|field|net.minecraft.world.WorldSettings.GameType|SPECTATOR
+         @|lagg\LoadTab.java|16703|16710|compare|method|com.google.common.collect.ComparisonChain|compare|(Ljava/lang/Comparable;Ljava/lang/Comparable;)Lcom/google/common/collect/ComparisonChain;
+         @|lagg\LoadTab.java|16753|16770|getRegisteredName|method|net.minecraft.scoreboard.Team|getRegisteredName|()Ljava/lang/String;
+         @|lagg\LoadTab.java|16823|16840|getRegisteredName|method|net.minecraft.scoreboard.Team|getRegisteredName|()Ljava/lang/String;
+         @|lagg\LoadTab.java|16849|16856|compare|method|com.google.common.collect.ComparisonChain|compare|(Ljava/lang/Comparable;Ljava/lang/Comparable;)Lcom/google/common/collect/ComparisonChain;
+         @|lagg\LoadTab.java|16857|16868|p_178952_1_|param|lagg.LoadTab.PlayerComparator|func_178952_a|(Lnet/minecraft/client/network/NetworkPlayerInfo;Lnet/minecraft/client/network/NetworkPlayerInfo;)I|p_178952_1_|0
+         @|lagg\LoadTab.java|16869|16883|getGameProfile|method|net.minecraft.client.network.NetworkPlayerInfo|getGameProfile|()Lcom/mojang/authlib/GameProfile;
+         @|lagg\LoadTab.java|16886|16893|getName|method|com.mojang.authlib.GameProfile|getName|()Ljava/lang/String;
+         @|lagg\LoadTab.java|16897|16908|p_178952_2_|param|lagg.LoadTab.PlayerComparator|func_178952_a|(Lnet/minecraft/client/network/NetworkPlayerInfo;Lnet/minecraft/client/network/NetworkPlayerInfo;)I|p_178952_2_|1
+         @|lagg\LoadTab.java|16909|16923|getGameProfile|method|net.minecraft.client.network.NetworkPlayerInfo|getGameProfile|()Lcom/mojang/authlib/GameProfile;
+         @|lagg\LoadTab.java|16926|16933|getName|method|com.mojang.authlib.GameProfile|getName|()Ljava/lang/String;
+         @|lagg\LoadTab.java|16937|16943|result|method|com.google.common.collect.ComparisonChain|result|()I
+      Method End: func_178952_a(Lnet/minecraft/client/network/NetworkPlayerInfo;Lnet/minecraft/client/network/NetworkPlayerInfo;)I
+      Method Start: compare(Ljava/lang/Object;Ljava/lang/Object;)I
+         @|lagg\LoadTab.java|16985|16992|compare|method|java.util.Comparator|compare|(Ljava/lang/Object;Ljava/lang/Object;)I
+         @|lagg\LoadTab.java|16993|16999|Object|class|java.lang.Object
+         @|lagg\LoadTab.java|17000|17012|p_compare_1_|param|lagg.LoadTab.PlayerComparator|compare|(Ljava/lang/Object;Ljava/lang/Object;)I|p_compare_1_|0
+         @|lagg\LoadTab.java|17014|17020|Object|class|java.lang.Object
+         @|lagg\LoadTab.java|17021|17033|p_compare_2_|param|lagg.LoadTab.PlayerComparator|compare|(Ljava/lang/Object;Ljava/lang/Object;)I|p_compare_2_|1
+         @|lagg\LoadTab.java|17077|17090|func_178952_a|method|lagg.LoadTab.PlayerComparator|func_178952_a|(Lnet/minecraft/client/network/NetworkPlayerInfo;Lnet/minecraft/client/network/NetworkPlayerInfo;)I
+         @|lagg\LoadTab.java|17092|17109|NetworkPlayerInfo|class|net.minecraft.client.network.NetworkPlayerInfo
+         @|lagg\LoadTab.java|17110|17122|p_compare_1_|param|lagg.LoadTab.PlayerComparator|compare|(Ljava/lang/Object;Ljava/lang/Object;)I|p_compare_1_|0
+         @|lagg\LoadTab.java|17125|17142|NetworkPlayerInfo|class|net.minecraft.client.network.NetworkPlayerInfo
+         @|lagg\LoadTab.java|17143|17155|p_compare_2_|param|lagg.LoadTab.PlayerComparator|compare|(Ljava/lang/Object;Ljava/lang/Object;)I|p_compare_2_|1
+      Method End: compare(Ljava/lang/Object;Ljava/lang/Object;)I
+      Method Start: PlayerComparator(Ljava/lang/Object;)V
+         @|lagg\LoadTab.java|17185|17201|PlayerComparator|method|lagg.LoadTab.PlayerComparator|PlayerComparator|(Ljava/lang/Object;)V
+         @|lagg\LoadTab.java|17202|17208|Object|class|java.lang.Object
+         @|lagg\LoadTab.java|17209|17220|p_i45528_1_|param|lagg.LoadTab.PlayerComparator|PlayerComparator|(Ljava/lang/Object;)V|p_i45528_1_|0
+      Method End: PlayerComparator(Ljava/lang/Object;)V
+   Class End  : lagg.LoadTab.PlayerComparator
+Class End  : lagg.LoadTab
+endProcessing lagg\LoadTab.java
+
+processing lagg\Main.java
+@|lagg\Main.java|8|12|lagg|package|lagg|(file)
+Class Start: lagg.Main
+   @|lagg\Main.java|1416|1422|String|class|java.lang.String
+   @|lagg\Main.java|1423|1428|MODID|field|lagg.Main|MODID|
+   @|lagg\Main.java|1477|1483|String|class|java.lang.String
+   @|lagg\Main.java|1484|1491|VERSION|field|lagg.Main|VERSION|
+   @|lagg\Main.java|1530|1536|String|class|java.lang.String
+   @|lagg\Main.java|1537|1541|NAME|field|lagg.Main|NAME|
+   @|lagg\Main.java|1590|1594|UUID|class|java.util.UUID
+   @|lagg\Main.java|1595|1600|OWNER|field|lagg.Main|OWNER|
+   @|lagg\Main.java|1603|1607|UUID|class|java.util.UUID
+   @|lagg\Main.java|1608|1618|fromString|method|java.util.UUID|fromString|(Ljava/lang/String;)Ljava/util/UUID;
+   @|lagg\Main.java|1683|1687|Game|class|lagg.Game
+   @|lagg\Main.java|1688|1699|currentGame|field|lagg.Main|currentGame|
+   @|lagg\Main.java|1729|1733|Game|class|lagg.Game
+   @|lagg\Main.java|1719|1728|ArrayList|class|java.util.ArrayList
+   @|lagg\Main.java|1735|1746|activeGames|field|lagg.Main|activeGames|
+   @|lagg\Main.java|1753|1762|ArrayList|class|java.util.ArrayList
+   @|lagg\Main.java|1763|1767|Game|class|lagg.Game
+   @|lagg\Main.java|1800|1806|String|class|java.lang.String
+   @|lagg\Main.java|1790|1799|ArrayList|class|java.util.ArrayList
+   @|lagg\Main.java|1808|1818|namesInTab|field|lagg.Main|namesInTab|
+   @|lagg\Main.java|1825|1834|ArrayList|class|java.util.ArrayList
+   @|lagg\Main.java|1835|1841|String|class|java.lang.String
+   @|lagg\Main.java|1874|1880|String|class|java.lang.String
+   @|lagg\Main.java|1864|1873|ArrayList|class|java.util.ArrayList
+   @|lagg\Main.java|1882|1892|scoreboard|field|lagg.Main|scoreboard|
+   @|lagg\Main.java|1899|1908|ArrayList|class|java.util.ArrayList
+   @|lagg\Main.java|1909|1915|String|class|java.lang.String
+   @|lagg\Main.java|1946|1964|canceledserverjoin|field|lagg.Main|canceledserverjoin|
+   @|lagg\Main.java|2000|2015|confirmedmember|field|lagg.Main|confirmedmember|
+   @|lagg\Main.java|2051|2067|confirmedbaddude|field|lagg.Main|confirmedbaddude|
+   Method Start: setCurrentGame(Llagg/Game;)V
+      @|lagg\Main.java|2105|2119|setCurrentGame|method|lagg.Main|setCurrentGame|(Llagg/Game;)V
+      @|lagg\Main.java|2120|2124|Game|class|lagg.Game
+      @|lagg\Main.java|2125|2129|game|param|lagg.Main|setCurrentGame|(Llagg/Game;)V|game|0
+      @|lagg\Main.java|2138|2149|currentGame|field|lagg.Main|currentGame
+      @|lagg\Main.java|2152|2156|game|param|lagg.Main|setCurrentGame|(Llagg/Game;)V|game|0
+   Method End: setCurrentGame(Llagg/Game;)V
+   Method Start: getCurrentGame()Llagg/Game;
+      @|lagg\Main.java|2187|2201|getCurrentGame|method|lagg.Main|getCurrentGame|()Llagg/Game;
+      @|lagg\Main.java|2182|2186|Game|class|lagg.Game
+      @|lagg\Main.java|2218|2229|currentGame|field|lagg.Main|currentGame
+   Method End: getCurrentGame()Llagg/Game;
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|lagg\Main.java|2276|2280|init|method|lagg.Main|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|lagg\Main.java|2281|2303|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|lagg\Main.java|2304|2309|event|param|lagg.Main|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|lagg\Main.java|2322|2338|FMLCommonHandler|class|net.minecraftforge.fml.common.FMLCommonHandler
+      @|lagg\Main.java|2339|2347|instance|method|net.minecraftforge.fml.common.FMLCommonHandler|instance|()Lnet/minecraftforge/fml/common/FMLCommonHandler;
+      @|lagg\Main.java|2350|2353|bus|method|net.minecraftforge.fml.common.FMLCommonHandler|bus|()Lnet/minecraftforge/fml/common/eventhandler/EventBus;
+      @|lagg\Main.java|2356|2364|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|lagg\Main.java|2380|2394|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|lagg\Main.java|2395|2404|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|lagg\Main.java|2405|2413|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|lagg\Main.java|2444|2464|ClientCommandHandler|class|net.minecraftforge.client.ClientCommandHandler
+      @|lagg\Main.java|2465|2473|instance|field|net.minecraftforge.client.ClientCommandHandler|instance
+      @|lagg\Main.java|2474|2489|registerCommand|method|net.minecraft.command.CommandHandler|registerCommand|(Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;
+      @|lagg\Main.java|2494|2501|Command|class|lagg.Command
+      @|lagg\Main.java|2523|2532|Exception|class|java.lang.Exception
+      @|lagg\Main.java|2549|2564|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: chat(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V
+      @|lagg\Main.java|2633|2637|chat|method|lagg.Main|chat|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V
+      @|lagg\Main.java|2638|2661|ClientChatReceivedEvent|class|net.minecraftforge.client.event.ClientChatReceivedEvent
+      @|lagg\Main.java|2662|2667|event|param|lagg.Main|chat|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|lagg\Main.java|2680|2695|confirmedmember|field|lagg.Main|confirmedmember
+      @|lagg\Main.java|2705|2709|UUID|class|java.util.UUID
+      @|lagg\Main.java|2717|2726|Minecraft|class|net.minecraft.client.Minecraft
+      @|lagg\Main.java|2727|2739|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|lagg\Main.java|2742|2751|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|lagg\Main.java|2752|2763|getUniqueID|method|net.minecraft.entity.Entity|getUniqueID|()Ljava/util/UUID;
+      @|lagg\Main.java|2779|2783|UUID|class|java.util.UUID
+      @|lagg\Main.java|2796|2807|ApiRequests|class|lagg.ApiRequests
+      @|lagg\Main.java|2808|2818|getMembers|method|lagg.ApiRequests|getMembers|(Ljava/lang/String;)[Ljava/util/UUID;
+      @|lagg\Main.java|2819|2830|ApiRequests|class|lagg.ApiRequests
+      @|lagg\Main.java|2831|2847|getGuildResponse|method|lagg.ApiRequests|getGuildResponse|(Ljava/util/UUID;)Ljava/lang/String;
+      @|lagg\Main.java|2848|2853|OWNER|field|lagg.Main|OWNER
+      Field: Array Length, skipping
+      @|lagg\Main.java|2936|2942|equals|method|java.util.UUID|equals|(Ljava/lang/Object;)Z
+      @|lagg\Main.java|2966|2981|confirmedmember|field|lagg.Main|confirmedmember
+      @|lagg\Main.java|3035|3050|confirmedmember|field|lagg.Main|confirmedmember
+      @|lagg\Main.java|3067|3082|confirmedmember|field|lagg.Main|confirmedmember
+      @|lagg\Main.java|3104|3120|confirmedbaddude|field|lagg.Main|confirmedbaddude
+      @|lagg\Main.java|3146|3152|Thread|class|java.lang.Thread
+      Anon Class Start: lagg.Main$1
+         Method Start: run()V
+            @|lagg\Main.java|3183|3186|run|method|java.lang.Runnable|run|()V
+            @|lagg\Main.java|3206|3212|String|class|java.lang.String
+            @|lagg\Main.java|3226|3237|ApiRequests|class|lagg.ApiRequests
+            @|lagg\Main.java|3238|3254|uuidsToUsernames|method|lagg.ApiRequests|uuidsToUsernames|([Ljava/util/UUID;)[Ljava/lang/String;
+            @|lagg\Main.java|3255|3266|ApiRequests|class|lagg.ApiRequests
+            @|lagg\Main.java|3267|3278|getOfficers|method|lagg.ApiRequests|getOfficers|(Ljava/lang/String;)[Ljava/util/UUID;
+            @|lagg\Main.java|3279|3290|ApiRequests|class|lagg.ApiRequests
+            @|lagg\Main.java|3291|3307|getGuildResponse|method|lagg.ApiRequests|getGuildResponse|(Ljava/util/UUID;)Ljava/lang/String;
+            @|lagg\Main.java|3308|3313|OWNER|field|lagg.Main|OWNER
+            Field: Array Length, skipping
+            @|lagg\Main.java|3459|3468|Minecraft|class|net.minecraft.client.Minecraft
+            @|lagg\Main.java|3469|3481|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+            @|lagg\Main.java|3484|3493|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+            @|lagg\Main.java|3494|3509|sendChatMessage|method|net.minecraft.client.entity.EntityPlayerSP|sendChatMessage|(Ljava/lang/String;)V
+            @|lagg\Main.java|3550|3556|Thread|class|java.lang.Thread
+            @|lagg\Main.java|3557|3562|sleep|method|java.lang.Thread|sleep|(J)V
+            @|lagg\Main.java|3604|3613|Minecraft|class|net.minecraft.client.Minecraft
+            @|lagg\Main.java|3614|3626|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+            @|lagg\Main.java|3629|3638|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+            @|lagg\Main.java|3639|3654|sendChatMessage|method|net.minecraft.client.entity.EntityPlayerSP|sendChatMessage|(Ljava/lang/String;)V
+            @|lagg\Main.java|3687|3693|Thread|class|java.lang.Thread
+            @|lagg\Main.java|3694|3699|sleep|method|java.lang.Thread|sleep|(J)V
+            @|lagg\Main.java|3730|3739|Exception|class|java.lang.Exception
+            @|lagg\Main.java|3764|3779|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+            @|lagg\Main.java|3833|3842|Minecraft|class|net.minecraft.client.Minecraft
+            @|lagg\Main.java|3843|3855|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+            @|lagg\Main.java|3858|3866|shutdown|method|net.minecraft.client.Minecraft|shutdown|()V
+         Method End: run()V
+      Anon Class End: lagg.Main$1
+      @|lagg\Main.java|3901|3906|start|method|java.lang.Thread|start|()V
+      @|lagg\Main.java|3939|3955|confirmedbaddude|field|lagg.Main|confirmedbaddude
+      @|lagg\Main.java|3965|3970|event|param|lagg.Main|chat|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|lagg\Main.java|3971|3982|setCanceled|method|net.minecraftforge.fml.common.eventhandler.Event|setCanceled|(Z)V
+      @|lagg\Main.java|4002|4008|String|class|java.lang.String
+      @|lagg\Main.java|4019|4024|event|param|lagg.Main|chat|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|lagg\Main.java|4025|4032|message|field|net.minecraftforge.client.event.ClientChatReceivedEvent|message
+      @|lagg\Main.java|4033|4049|getFormattedText|method|net.minecraft.util.IChatComponent|getFormattedText|()Ljava/lang/String;
+      @|lagg\Main.java|4069|4077|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|lagg\Main.java|4140|4158|canceledserverjoin|field|lagg.Main|canceledserverjoin
+      @|lagg\Main.java|4185|4192|Matcher|class|java.util.regex.Matcher
+      @|lagg\Main.java|4197|4204|Pattern|class|java.util.regex.Pattern
+      @|lagg\Main.java|4205|4212|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      @|lagg\Main.java|4251|4258|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      @|lagg\Main.java|4279|4283|find|method|java.util.regex.Matcher|find|()Z
+      @|lagg\Main.java|4312|4323|activeGames|field|lagg.Main|activeGames
+      @|lagg\Main.java|4324|4328|size|method|java.util.Collection|size|()I
+      @|lagg\Main.java|4349|4360|activeGames|field|lagg.Main|activeGames
+      @|lagg\Main.java|4361|4364|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|lagg\Main.java|4368|4374|server|field|lagg.Game|server
+      @|lagg\Main.java|4375|4381|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|lagg\Main.java|4384|4389|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\Main.java|4435|4441|Thread|class|java.lang.Thread
+      Anon Class Start: lagg.Main$2
+         Method Start: run()V
+            @|lagg\Main.java|4467|4470|run|method|java.lang.Runnable|run|()V
+            @|lagg\Main.java|4502|4508|Thread|class|java.lang.Thread
+            @|lagg\Main.java|4509|4514|sleep|method|java.lang.Thread|sleep|(J)V
+            @|lagg\Main.java|4536|4554|canceledserverjoin|field|lagg.Main|canceledserverjoin
+            @|lagg\Main.java|4570|4576|Thread|class|java.lang.Thread
+            @|lagg\Main.java|4577|4582|sleep|method|java.lang.Thread|sleep|(J)V
+            @|lagg\Main.java|4602|4613|currentGame|field|lagg.Main|currentGame
+            @|lagg\Main.java|4616|4627|activeGames|field|lagg.Main|activeGames
+            @|lagg\Main.java|4628|4631|get|method|java.util.List|get|(I)Ljava/lang/Object;
+            @|lagg\Main.java|4655|4666|currentGame|field|lagg.Main|currentGame
+            @|lagg\Main.java|4667|4675|rejoined|method|lagg.Game|rejoined|()V
+            @|lagg\Main.java|4711|4729|canceledserverjoin|field|lagg.Main|canceledserverjoin
+            @|lagg\Main.java|4771|4780|Exception|class|java.lang.Exception
+            @|lagg\Main.java|4799|4814|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+         Method End: run()V
+      Anon Class End: lagg.Main$2
+      @|lagg\Main.java|4851|4856|start|method|java.lang.Thread|start|()V
+      @|lagg\Main.java|4903|4909|Thread|class|java.lang.Thread
+      Anon Class Start: lagg.Main$3
+         Method Start: run()V
+            @|lagg\Main.java|4933|4936|run|method|java.lang.Runnable|run|()V
+            @|lagg\Main.java|4964|4970|Thread|class|java.lang.Thread
+            @|lagg\Main.java|4971|4976|sleep|method|java.lang.Thread|sleep|(J)V
+            @|lagg\Main.java|4999|5017|canceledserverjoin|field|lagg.Main|canceledserverjoin
+            @|lagg\Main.java|5031|5037|Thread|class|java.lang.Thread
+            @|lagg\Main.java|5038|5043|sleep|method|java.lang.Thread|sleep|(J)V
+            @|lagg\Main.java|5061|5075|setCurrentGame|method|lagg.Main|setCurrentGame|(Llagg/Game;)V
+            @|lagg\Main.java|5076|5092|createProperGame|method|lagg.Main|createProperGame|(Ljava/lang/String;)Llagg/Game;
+            @|lagg\Main.java|5095|5100|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+            @|lagg\Main.java|5120|5131|activeGames|field|lagg.Main|activeGames
+            @|lagg\Main.java|5132|5135|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+            @|lagg\Main.java|5136|5150|getCurrentGame|method|lagg.Main|getCurrentGame|()Llagg/Game;
+            @|lagg\Main.java|5189|5207|canceledserverjoin|field|lagg.Main|canceledserverjoin
+            @|lagg\Main.java|5248|5257|Exception|class|java.lang.Exception
+            @|lagg\Main.java|5274|5289|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+         Method End: run()V
+      Anon Class End: lagg.Main$3
+      @|lagg\Main.java|5320|5325|start|method|java.lang.Thread|start|()V
+      @|lagg\Main.java|5358|5372|getCurrentGame|method|lagg.Main|getCurrentGame|()Llagg/Game;
+      @|lagg\Main.java|5386|5398|WarlordsGame|class|lagg.games.WarlordsGame
+      @|lagg\Main.java|5408|5420|WarlordsGame|class|lagg.games.WarlordsGame
+      @|lagg\Main.java|5429|5441|WarlordsGame|class|lagg.games.WarlordsGame
+      @|lagg\Main.java|5443|5457|getCurrentGame|method|lagg.Main|getCurrentGame|()Llagg/Game;
+      @|lagg\Main.java|5473|5484|countAttack|method|lagg.games.WarlordsGame|countAttack|(Ljava/lang/String;)V
+   Method End: chat(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V
+   Method Start: render(Lnet/minecraftforge/client/event/RenderGameOverlayEvent;)V
+      @|lagg\Main.java|5549|5555|render|method|lagg.Main|render|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent;)V
+      @|lagg\Main.java|5556|5578|RenderGameOverlayEvent|class|net.minecraftforge.client.event.RenderGameOverlayEvent
+      @|lagg\Main.java|5579|5584|event|param|lagg.Main|render|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent;)V|event|0
+      @|lagg\Main.java|5600|5605|event|param|lagg.Main|render|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent;)V|event|0
+      @|lagg\Main.java|5606|5618|isCancelable|method|net.minecraftforge.fml.common.eventhandler.Event|isCancelable|()Z
+      @|lagg\Main.java|5624|5629|event|param|lagg.Main|render|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent;)V|event|0
+      @|lagg\Main.java|5630|5634|type|field|net.minecraftforge.client.event.RenderGameOverlayEvent|type
+      @|lagg\Main.java|5638|5649|ElementType|class|net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType
+      @|lagg\Main.java|5650|5660|EXPERIENCE|field|net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType|EXPERIENCE
+      @|lagg\Main.java|5705|5719|getCurrentGame|method|lagg.Main|getCurrentGame|()Llagg/Game;
+      @|lagg\Main.java|5731|5745|getCurrentGame|method|lagg.Main|getCurrentGame|()Llagg/Game;
+      @|lagg\Main.java|5759|5771|WarlordsGame|class|lagg.games.WarlordsGame
+      @|lagg\Main.java|5784|5796|WarlordsGame|class|lagg.games.WarlordsGame
+      @|lagg\Main.java|5805|5817|WarlordsGame|class|lagg.games.WarlordsGame
+      @|lagg\Main.java|5819|5830|currentGame|field|lagg.Main|currentGame
+      @|lagg\Main.java|5842|5854|FontRenderer|class|net.minecraft.client.gui.FontRenderer
+      @|lagg\Main.java|5865|5874|Minecraft|class|net.minecraft.client.Minecraft
+      @|lagg\Main.java|5875|5887|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|lagg\Main.java|5890|5905|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|lagg\Main.java|5913|5926|DecimalFormat|class|java.text.DecimalFormat
+      @|lagg\Main.java|5936|5949|DecimalFormat|class|java.text.DecimalFormat
+      @|lagg\Main.java|5971|5977|String|class|java.lang.String
+      @|lagg\Main.java|6006|6012|format|method|java.text.NumberFormat|format|(D)Ljava/lang/String;
+      @|lagg\Main.java|6027|6039|outputdamage|field|lagg.games.WarlordsGame|outputdamage
+      @|lagg\Main.java|6063|6069|String|class|java.lang.String
+      @|lagg\Main.java|6099|6105|format|method|java.text.NumberFormat|format|(D)Ljava/lang/String;
+      @|lagg\Main.java|6120|6133|outputhealing|field|lagg.games.WarlordsGame|outputhealing
+      @|lagg\Main.java|6157|6163|String|class|java.lang.String
+      @|lagg\Main.java|6191|6197|format|method|java.text.NumberFormat|format|(D)Ljava/lang/String;
+      @|lagg\Main.java|6212|6223|damagetaken|field|lagg.games.WarlordsGame|damagetaken
+      @|lagg\Main.java|6247|6253|String|class|java.lang.String
+      @|lagg\Main.java|6282|6288|format|method|java.text.NumberFormat|format|(D)Ljava/lang/String;
+      @|lagg\Main.java|6303|6315|healingtaken|field|lagg.games.WarlordsGame|healingtaken
+      @|lagg\Main.java|6350|6360|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|lagg\Main.java|6361|6379|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|lagg\Main.java|6380|6383|RED|field|net.minecraft.util.EnumChatFormatting|RED
+      @|lagg\Main.java|6404|6422|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|lagg\Main.java|6423|6428|WHITE|field|net.minecraft.util.EnumChatFormatting|WHITE
+      @|lagg\Main.java|6485|6495|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|lagg\Main.java|6496|6514|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|lagg\Main.java|6515|6520|GREEN|field|net.minecraft.util.EnumChatFormatting|GREEN
+      @|lagg\Main.java|6542|6560|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|lagg\Main.java|6561|6566|WHITE|field|net.minecraft.util.EnumChatFormatting|WHITE
+      @|lagg\Main.java|6625|6635|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|lagg\Main.java|6636|6654|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|lagg\Main.java|6655|6663|DARK_RED|field|net.minecraft.util.EnumChatFormatting|DARK_RED
+      @|lagg\Main.java|6685|6703|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|lagg\Main.java|6704|6709|WHITE|field|net.minecraft.util.EnumChatFormatting|WHITE
+      @|lagg\Main.java|6766|6776|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|lagg\Main.java|6777|6795|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|lagg\Main.java|6796|6806|DARK_GREEN|field|net.minecraft.util.EnumChatFormatting|DARK_GREEN
+      @|lagg\Main.java|6829|6847|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|lagg\Main.java|6848|6853|WHITE|field|net.minecraft.util.EnumChatFormatting|WHITE
+   Method End: render(Lnet/minecraftforge/client/event/RenderGameOverlayEvent;)V
+   Method Start: createProperGame(Ljava/lang/String;)Llagg/Game;
+      @|lagg\Main.java|6935|6951|createProperGame|method|lagg.Main|createProperGame|(Ljava/lang/String;)Llagg/Game;
+      @|lagg\Main.java|6930|6934|Game|class|lagg.Game
+      @|lagg\Main.java|6952|6958|String|class|java.lang.String
+      @|lagg\Main.java|6959|6965|server|param|lagg.Main|createProperGame|(Ljava/lang/String;)Llagg/Game;|server|0
+      @|lagg\Main.java|6974|6979|Games|class|lagg.Main.Games
+      @|lagg\Main.java|6994|6999|Games|class|lagg.Main.Games
+      @|lagg\Main.java|7000|7007|valueOf|method|lagg.Main.Games|valueOf|(Ljava/lang/String;)Llagg/Main$Games;
+      @|lagg\Main.java|7008|7015|getGame|method|lagg.Main|getGame|()Ljava/lang/String;
+      @|lagg\Main.java|7058|7066|WARLORDS|field|lagg.Main.Games|WARLORDS
+      @|lagg\Main.java|7085|7097|WarlordsGame|class|lagg.games.WarlordsGame
+      @|lagg\Main.java|7098|7104|server|param|lagg.Main|createProperGame|(Ljava/lang/String;)Llagg/Game;|server|0
+      @|lagg\Main.java|7117|7127|MEGA_WALLS|field|lagg.Main.Games|MEGA_WALLS
+      @|lagg\Main.java|7146|7159|MegaWallsGame|class|lagg.games.MegaWallsGame
+      @|lagg\Main.java|7160|7166|server|param|lagg.Main|createProperGame|(Ljava/lang/String;)Llagg/Game;|server|0
+      @|lagg\Main.java|7200|7204|Game|class|lagg.Game
+      @|lagg\Main.java|7205|7211|server|param|lagg.Main|createProperGame|(Ljava/lang/String;)Llagg/Game;|server|0
+   Method End: createProperGame(Ljava/lang/String;)Llagg/Game;
+   Enum Start: lagg.Main.Games
+      @|lagg\Main.java|7249|7254|Games|class|lagg.Main.Games
+      @|lagg\Main.java|7259|7267|WARLORDS|field|lagg.Main.Games|WARLORDS
+      @|lagg\Main.java|7271|7278|SKYWARS|field|lagg.Main.Games|SKYWARS
+      @|lagg\Main.java|7282|7294|ARCADE_GAMES|field|lagg.Main.Games|ARCADE_GAMES
+      @|lagg\Main.java|7298|7311|THE_TNT_GAMES|field|lagg.Main.Games|THE_TNT_GAMES
+      @|lagg\Main.java|7315|7322|HOUSING|field|lagg.Main.Games|HOUSING
+      @|lagg\Main.java|7326|7333|HYPIXEL|field|lagg.Main.Games|HYPIXEL
+      @|lagg\Main.java|7337|7345|SKYCLASH|field|lagg.Main.Games|SKYCLASH
+      @|lagg\Main.java|7349|7359|MEGA_WALLS|field|lagg.Main.Games|MEGA_WALLS
+      @|lagg\Main.java|7363|7371|BLITZ_SG|field|lagg.Main.Games|BLITZ_SG
+      @|lagg\Main.java|7375|7388|UHC_CHAMPIONS|field|lagg.Main.Games|UHC_CHAMPIONS
+      @|lagg\Main.java|7392|7406|COPS_AND_CRIMS|field|lagg.Main.Games|COPS_AND_CRIMS
+      @|lagg\Main.java|7410|7421|CRAZY_WALLS|field|lagg.Main.Games|CRAZY_WALLS
+      @|lagg\Main.java|7425|7434|SPEED_UHC|field|lagg.Main.Games|SPEED_UHC
+      @|lagg\Main.java|7438|7450|SMASH_HEROES|field|lagg.Main.Games|SMASH_HEROES
+      @|lagg\Main.java|7454|7463|PROTOTYPE|field|lagg.Main.Games|PROTOTYPE
+      @|lagg\Main.java|7467|7476|PAINTBALL|field|lagg.Main.Games|PAINTBALL
+      @|lagg\Main.java|7480|7488|VAMPIREZ|field|lagg.Main.Games|VAMPIREZ
+      @|lagg\Main.java|7492|7509|TURBO_KART_RACERS|field|lagg.Main.Games|TURBO_KART_RACERS
+      @|lagg\Main.java|7513|7522|THE_WALLS|field|lagg.Main.Games|THE_WALLS
+      @|lagg\Main.java|7526|7537|ARENA_BRAWL|field|lagg.Main.Games|ARENA_BRAWL
+      @|lagg\Main.java|7541|7551|QUAKECRAFT|field|lagg.Main.Games|QUAKECRAFT
+   Enum End  : lagg.Main.Games
+   Method Start: getPlayersInTab()Ljava/util/ArrayList;
+      @|lagg\Main.java|7597|7612|getPlayersInTab|method|lagg.Main|getPlayersInTab|()Ljava/util/ArrayList;
+      @|lagg\Main.java|7589|7595|String|class|java.lang.String
+      @|lagg\Main.java|7579|7588|ArrayList|class|java.util.ArrayList
+      @|lagg\Main.java|7626|7633|LoadTab|class|lagg.LoadTab
+      @|lagg\Main.java|7636|7650|drawTabOverlay|method|lagg.LoadTab|drawTabOverlay|()V
+      @|lagg\Main.java|7666|7670|Main|class|lagg.Main
+      @|lagg\Main.java|7671|7681|namesInTab|field|lagg.Main|namesInTab
+   Method End: getPlayersInTab()Ljava/util/ArrayList;
+   Method Start: getScoreboard()Ljava/util/ArrayList;
+      @|lagg\Main.java|7730|7743|getScoreboard|method|lagg.Main|getScoreboard|()Ljava/util/ArrayList;
+      @|lagg\Main.java|7722|7728|String|class|java.lang.String
+      @|lagg\Main.java|7712|7721|ArrayList|class|java.util.ArrayList
+      @|lagg\Main.java|7757|7771|LoadScoreboard|class|lagg.LoadScoreboard
+      @|lagg\Main.java|7774|7785|othermethod|method|lagg.LoadScoreboard|othermethod|()V
+      @|lagg\Main.java|7801|7805|Main|class|lagg.Main
+      @|lagg\Main.java|7806|7816|scoreboard|field|lagg.Main|scoreboard
+   Method End: getScoreboard()Ljava/util/ArrayList;
+   Method Start: getGame()Ljava/lang/String;
+      @|lagg\Main.java|7854|7861|getGame|method|lagg.Main|getGame|()Ljava/lang/String;
+      @|lagg\Main.java|7847|7853|String|class|java.lang.String
+      @|lagg\Main.java|7868|7874|String|class|java.lang.String
+      @|lagg\Main.java|7891|7900|Minecraft|class|net.minecraft.client.Minecraft
+      @|lagg\Main.java|7901|7913|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|lagg\Main.java|7916|7925|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|lagg\Main.java|7926|7944|getWorldScoreboard|method|net.minecraft.entity.player.EntityPlayer|getWorldScoreboard|()Lnet/minecraft/scoreboard/Scoreboard;
+      @|lagg\Main.java|7947|7972|getObjectiveInDisplaySlot|method|net.minecraft.scoreboard.Scoreboard|getObjectiveInDisplaySlot|(I)Lnet/minecraft/scoreboard/ScoreObjective;
+      @|lagg\Main.java|7976|7990|getDisplayName|method|net.minecraft.scoreboard.ScoreObjective|getDisplayName|()Ljava/lang/String;
+      @|lagg\Main.java|7996|8002|String|class|java.lang.String
+      @|lagg\Main.java|8035|8045|replaceAll|method|java.lang.String|replaceAll|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\Main.java|8064|8074|replaceAll|method|java.lang.String|replaceAll|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\Main.java|8088|8098|replaceAll|method|java.lang.String|replaceAll|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   Method End: getGame()Ljava/lang/String;
+   Method Start: getServer()Ljava/lang/String;
+      @|lagg\Main.java|8166|8175|getServer|method|lagg.Main|getServer|()Ljava/lang/String;
+      @|lagg\Main.java|8159|8165|String|class|java.lang.String
+   Method End: getServer()Ljava/lang/String;
+   Method Start: getUserUUID()Ljava/util/UUID;
+      @|lagg\Main.java|8223|8234|getUserUUID|method|lagg.Main|getUserUUID|()Ljava/util/UUID;
+      @|lagg\Main.java|8218|8222|UUID|class|java.util.UUID
+      @|lagg\Main.java|8248|8257|Minecraft|class|net.minecraft.client.Minecraft
+      @|lagg\Main.java|8258|8270|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|lagg\Main.java|8273|8282|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|lagg\Main.java|8283|8294|getUniqueID|method|net.minecraft.entity.Entity|getUniqueID|()Ljava/util/UUID;
+   Method End: getUserUUID()Ljava/util/UUID;
+Class End  : lagg.Main
+endProcessing lagg\Main.java
+
+processing lagg\Player.java
+@|lagg\Player.java|8|12|lagg|package|lagg|(file)
+Class Start: lagg.Player
+   @|lagg\Player.java|538|544|String|class|java.lang.String
+   @|lagg\Player.java|545|553|username|field|lagg.Player|username|
+   @|lagg\Player.java|563|567|UUID|class|java.util.UUID
+   @|lagg\Player.java|568|572|uuid|field|lagg.Player|uuid|
+   @|lagg\Player.java|586|598|networkLevel|field|lagg.Player|networkLevel|
+   @|lagg\Player.java|608|614|String|class|java.lang.String
+   @|lagg\Player.java|615|619|rank|field|lagg.Player|rank|
+   @|lagg\Player.java|633|646|megaWallsWins|field|lagg.Player|megaWallsWins|
+   @|lagg\Player.java|660|675|megaWallsFinals|field|lagg.Player|megaWallsFinals|
+   @|lagg\Player.java|685|691|Object|class|java.lang.Object
+   @|lagg\Player.java|696|705|mwClasses|field|lagg.Player|mwClasses|
+   @|lagg\Player.java|715|721|Object|class|java.lang.Object
+   @|lagg\Player.java|726|741|warlordsClasses|field|lagg.Player|warlordsClasses|
+   @|lagg\Player.java|751|757|Object|class|java.lang.Object
+   @|lagg\Player.java|762|769|bsgKits|field|lagg.Player|bsgKits|
+   @|lagg\Player.java|779|785|String|class|java.lang.String
+   @|lagg\Player.java|790|801|smashHeroes|field|lagg.Player|smashHeroes|
+   Method Start: Player(Ljava/lang/String;)V
+      @|lagg\Player.java|813|819|Player|method|lagg.Player|Player|(Ljava/lang/String;)V
+      @|lagg\Player.java|820|826|String|class|java.lang.String
+      @|lagg\Player.java|827|835|username|param|lagg.Player|Player|(Ljava/lang/String;)V|username|0
+      @|lagg\Player.java|846|854|username|field|lagg.Player|username
+      @|lagg\Player.java|857|865|username|param|lagg.Player|Player|(Ljava/lang/String;)V|username|0
+      @|lagg\Player.java|874|878|uuid|field|lagg.Player|uuid
+      @|lagg\Player.java|881|892|ApiRequests|class|lagg.ApiRequests
+      @|lagg\Player.java|893|900|getUUID|method|lagg.ApiRequests|getUUID|(Ljava/lang/String;)Ljava/util/UUID;
+      @|lagg\Player.java|901|909|username|param|lagg.Player|Player|(Ljava/lang/String;)V|username|0
+      @|lagg\Player.java|914|920|String|class|java.lang.String
+      @|lagg\Player.java|935|946|ApiRequests|class|lagg.ApiRequests
+      @|lagg\Player.java|947|964|getPlayerResponse|method|lagg.ApiRequests|getPlayerResponse|(Ljava/util/UUID;)Ljava/lang/String;
+      @|lagg\Player.java|965|969|uuid|field|lagg.Player|uuid
+      @|lagg\Player.java|979|991|networkLevel|field|lagg.Player|networkLevel
+      @|lagg\Player.java|994|1005|ApiRequests|class|lagg.ApiRequests
+      @|lagg\Player.java|1006|1021|getNetworkLevel|method|lagg.ApiRequests|getNetworkLevel|(Ljava/lang/String;)I
+      @|lagg\Player.java|1043|1058|megaWallsFinals|field|lagg.Player|megaWallsFinals
+      @|lagg\Player.java|1061|1072|ApiRequests|class|lagg.ApiRequests
+      @|lagg\Player.java|1073|1084|getMwFinals|method|lagg.ApiRequests|getMwFinals|(Ljava/lang/String;)I
+      @|lagg\Player.java|1106|1119|megaWallsWins|field|lagg.Player|megaWallsWins
+      @|lagg\Player.java|1122|1133|ApiRequests|class|lagg.ApiRequests
+      @|lagg\Player.java|1134|1143|getMwWins|method|lagg.ApiRequests|getMwWins|(Ljava/lang/String;)I
+      @|lagg\Player.java|1165|1174|mwClasses|field|lagg.Player|mwClasses
+      @|lagg\Player.java|1177|1188|ApiRequests|class|lagg.ApiRequests
+      @|lagg\Player.java|1189|1201|getMwClasses|method|lagg.ApiRequests|getMwClasses|(Ljava/lang/String;)[[Ljava/lang/Object;
+      @|lagg\Player.java|1223|1227|rank|field|lagg.Player|rank
+      @|lagg\Player.java|1230|1241|ApiRequests|class|lagg.ApiRequests
+      @|lagg\Player.java|1242|1256|getColoredRank|method|lagg.ApiRequests|getColoredRank|(Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\Player.java|1278|1293|warlordsClasses|field|lagg.Player|warlordsClasses
+      @|lagg\Player.java|1296|1307|ApiRequests|class|lagg.ApiRequests
+      @|lagg\Player.java|1308|1326|getWarlordsClasses|method|lagg.ApiRequests|getWarlordsClasses|(Ljava/lang/String;)[[Ljava/lang/Object;
+   Method End: Player(Ljava/lang/String;)V
+Class End  : lagg.Player
+endProcessing lagg\Player.java
+
+processing lagg\URLConnectionReader.java
+@|lagg\URLConnectionReader.java|8|12|lagg|package|lagg|(file)
+Class Start: lagg.URLConnectionReader
+   Method Start: getText(Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\URLConnectionReader.java|113|120|getText|method|lagg.URLConnectionReader|getText|(Ljava/lang/String;)Ljava/lang/String;
+      @|lagg\URLConnectionReader.java|106|112|String|class|java.lang.String
+      @|lagg\URLConnectionReader.java|140|149|Exception|class|java.lang.Exception
+      @|lagg\URLConnectionReader.java|121|127|String|class|java.lang.String
+      @|lagg\URLConnectionReader.java|128|131|url|param|lagg.URLConnectionReader|getText|(Ljava/lang/String;)Ljava/lang/String;|url|0
+      @|lagg\URLConnectionReader.java|160|163|URL|class|java.net.URL
+      @|lagg\URLConnectionReader.java|178|181|URL|class|java.net.URL
+      @|lagg\URLConnectionReader.java|182|185|url|param|lagg.URLConnectionReader|getText|(Ljava/lang/String;)Ljava/lang/String;|url|0
+      @|lagg\URLConnectionReader.java|196|209|URLConnection|class|java.net.URLConnection
+      @|lagg\URLConnectionReader.java|231|245|openConnection|method|java.net.URL|openConnection|()Ljava/net/URLConnection;
+      @|lagg\URLConnectionReader.java|257|271|BufferedReader|class|java.io.BufferedReader
+      @|lagg\URLConnectionReader.java|281|295|BufferedReader|class|java.io.BufferedReader
+      @|lagg\URLConnectionReader.java|300|317|InputStreamReader|class|java.io.InputStreamReader
+      @|lagg\URLConnectionReader.java|329|343|getInputStream|method|java.net.URLConnection|getInputStream|()Ljava/io/InputStream;
+      @|lagg\URLConnectionReader.java|357|370|StringBuilder|class|java.lang.StringBuilder
+      @|lagg\URLConnectionReader.java|386|399|StringBuilder|class|java.lang.StringBuilder
+      @|lagg\URLConnectionReader.java|411|417|String|class|java.lang.String
+      @|lagg\URLConnectionReader.java|461|469|readLine|method|java.io.BufferedReader|readLine|()Ljava/lang/String;
+      @|lagg\URLConnectionReader.java|504|510|append|method|java.lang.AbstractStringBuilder|append|(Ljava/lang/String;)Ljava/lang/AbstractStringBuilder;
+      @|lagg\URLConnectionReader.java|535|540|close|method|java.lang.AutoCloseable|close|()V
+      @|lagg\URLConnectionReader.java|569|577|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+   Method End: getText(Ljava/lang/String;)Ljava/lang/String;
+Class End  : lagg.URLConnectionReader
+endProcessing lagg\URLConnectionReader.java
+
+processing lagg\games\MegaWallsGame.java
+@|lagg\games\MegaWallsGame.java|8|18|lagg.games|package|lagg.games|(file)
+Class Start: lagg.games.MegaWallsGame
+   @|lagg\games\MegaWallsGame.java|130|136|String|class|java.lang.String
+   @|lagg\games\MegaWallsGame.java|137|143|server|field|lagg.games.MegaWallsGame|server|
+   @|lagg\games\MegaWallsGame.java|146|152|String|class|java.lang.String
+   @|lagg\games\MegaWallsGame.java|153|161|gamemode|field|lagg.games.MegaWallsGame|gamemode|
+   @|lagg\games\MegaWallsGame.java|164|170|String|class|java.lang.String
+   @|lagg\games\MegaWallsGame.java|171|182|chosenclass|field|lagg.games.MegaWallsGame|chosenclass|
+   @|lagg\games\MegaWallsGame.java|193|208|haveWallsFallen|field|lagg.games.MegaWallsGame|haveWallsFallen|
+   @|lagg\games\MegaWallsGame.java|219|233|hasGameStarted|field|lagg.games.MegaWallsGame|hasGameStarted|
+   @|lagg\games\MegaWallsGame.java|241|254|firstjoinTime|field|lagg.games.MegaWallsGame|firstjoinTime|
+   @|lagg\games\MegaWallsGame.java|262|274|lastJoinTime|field|lagg.games.MegaWallsGame|lastJoinTime|
+   @|lagg\games\MegaWallsGame.java|282|291|startTime|field|lagg.games.MegaWallsGame|startTime|
+   @|lagg\games\MegaWallsGame.java|304|310|String|class|java.lang.String
+   @|lagg\games\MegaWallsGame.java|294|303|ArrayList|class|java.util.ArrayList
+   @|lagg\games\MegaWallsGame.java|312|319|players|field|lagg.games.MegaWallsGame|players|
+   Method Start: MegaWallsGame(Ljava/lang/String;)V
+      @|lagg\games\MegaWallsGame.java|331|344|MegaWallsGame|method|lagg.games.MegaWallsGame|MegaWallsGame|(Ljava/lang/String;)V
+      @|lagg\games\MegaWallsGame.java|345|351|String|class|java.lang.String
+      @|lagg\games\MegaWallsGame.java|352|358|server|param|lagg.games.MegaWallsGame|MegaWallsGame|(Ljava/lang/String;)V|server|0
+      @|lagg\games\MegaWallsGame.java|370|376|server|param|lagg.games.MegaWallsGame|MegaWallsGame|(Ljava/lang/String;)V|server|0
+   Method End: MegaWallsGame(Ljava/lang/String;)V
+   Method Start: haveWallsFallen()Z
+      @|lagg\games\MegaWallsGame.java|403|418|haveWallsFallen|method|lagg.games.MegaWallsGame|haveWallsFallen|()Z
+   Method End: haveWallsFallen()Z
+Class End  : lagg.games.MegaWallsGame
+endProcessing lagg\games\MegaWallsGame.java
+
+processing lagg\games\SmashHeroesGame.java
+@|lagg\games\SmashHeroesGame.java|8|18|lagg.games|package|lagg.games|(file)
+Class Start: lagg.games.SmashHeroesGame
+Class End  : lagg.games.SmashHeroesGame
+endProcessing lagg\games\SmashHeroesGame.java
+
+processing lagg\games\TKRGame.java
+@|lagg\games\TKRGame.java|8|18|lagg.games|package|lagg.games|(file)
+Class Start: lagg.games.TKRGame
+Class End  : lagg.games.TKRGame
+endProcessing lagg\games\TKRGame.java
+
+processing lagg\games\WarlordsGame.java
+@|lagg\games\WarlordsGame.java|8|18|lagg.games|package|lagg.games|(file)
+Class Start: lagg.games.WarlordsGame
+   @|lagg\games\WarlordsGame.java|276|282|String|class|java.lang.String
+   @|lagg\games\WarlordsGame.java|283|289|server|field|lagg.games.WarlordsGame|server|
+   @|lagg\games\WarlordsGame.java|292|298|String|class|java.lang.String
+   @|lagg\games\WarlordsGame.java|299|307|gamemode|field|lagg.games.WarlordsGame|gamemode|
+   @|lagg\games\WarlordsGame.java|318|332|hasGameStarted|field|lagg.games.WarlordsGame|hasGameStarted|
+   @|lagg\games\WarlordsGame.java|340|353|firstJoinTime|field|lagg.games.WarlordsGame|firstJoinTime|
+   @|lagg\games\WarlordsGame.java|361|373|lastJoinTime|field|lagg.games.WarlordsGame|lastJoinTime|
+   @|lagg\games\WarlordsGame.java|381|390|startTime|field|lagg.games.WarlordsGame|startTime|
+   @|lagg\games\WarlordsGame.java|403|409|String|class|java.lang.String
+   @|lagg\games\WarlordsGame.java|393|402|ArrayList|class|java.util.ArrayList
+   @|lagg\games\WarlordsGame.java|411|418|players|field|lagg.games.WarlordsGame|players|
+   @|lagg\games\WarlordsGame.java|432|444|outputdamage|field|lagg.games.WarlordsGame|outputdamage|
+   @|lagg\games\WarlordsGame.java|462|475|outputhealing|field|lagg.games.WarlordsGame|outputhealing|
+   @|lagg\games\WarlordsGame.java|493|504|damagetaken|field|lagg.games.WarlordsGame|damagetaken|
+   @|lagg\games\WarlordsGame.java|522|534|healingtaken|field|lagg.games.WarlordsGame|healingtaken|
+   @|lagg\games\WarlordsGame.java|548|554|String|class|java.lang.String
+   @|lagg\games\WarlordsGame.java|555|566|playerclass|field|lagg.games.WarlordsGame|playerclass|
+   @|lagg\games\WarlordsGame.java|579|585|String|class|java.lang.String
+   @|lagg\games\WarlordsGame.java|569|578|ArrayList|class|java.util.ArrayList
+   @|lagg\games\WarlordsGame.java|587|590|log|field|lagg.games.WarlordsGame|log|
+   @|lagg\games\WarlordsGame.java|597|606|ArrayList|class|java.util.ArrayList
+   @|lagg\games\WarlordsGame.java|607|613|String|class|java.lang.String
+   Method Start: WarlordsGame(Ljava/lang/String;)V
+      @|lagg\games\WarlordsGame.java|628|640|WarlordsGame|method|lagg.games.WarlordsGame|WarlordsGame|(Ljava/lang/String;)V
+      @|lagg\games\WarlordsGame.java|641|647|String|class|java.lang.String
+      @|lagg\games\WarlordsGame.java|648|654|server|param|lagg.games.WarlordsGame|WarlordsGame|(Ljava/lang/String;)V|server|0
+      @|lagg\games\WarlordsGame.java|666|672|server|param|lagg.games.WarlordsGame|WarlordsGame|(Ljava/lang/String;)V|server|0
+      @|lagg\games\WarlordsGame.java|677|688|playerclass|field|lagg.games.WarlordsGame|playerclass
+      @|lagg\games\WarlordsGame.java|691|705|getPlayerClass|method|lagg.games.WarlordsGame|getPlayerClass|()Ljava/lang/String;
+   Method End: WarlordsGame(Ljava/lang/String;)V
+   Method Start: getPlayerClass()Ljava/lang/String;
+      @|lagg\games\WarlordsGame.java|736|750|getPlayerClass|method|lagg.games.WarlordsGame|getPlayerClass|()Ljava/lang/String;
+      @|lagg\games\WarlordsGame.java|729|735|String|class|java.lang.String
+      @|lagg\games\WarlordsGame.java|757|766|ArrayList|class|java.util.ArrayList
+      @|lagg\games\WarlordsGame.java|767|773|String|class|java.lang.String
+      @|lagg\games\WarlordsGame.java|788|792|Main|class|lagg.Main
+      @|lagg\games\WarlordsGame.java|793|806|getScoreboard|method|lagg.Main|getScoreboard|()Ljava/util/ArrayList;
+      @|lagg\games\WarlordsGame.java|840|844|size|method|java.util.Collection|size|()I
+      @|lagg\games\WarlordsGame.java|858|865|Matcher|class|java.util.regex.Matcher
+      @|lagg\games\WarlordsGame.java|870|877|Pattern|class|java.util.regex.Pattern
+      @|lagg\games\WarlordsGame.java|878|885|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      @|lagg\games\WarlordsGame.java|926|933|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      @|lagg\games\WarlordsGame.java|945|948|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|lagg\games\WarlordsGame.java|962|966|find|method|java.util.regex.Matcher|find|()Z
+      @|lagg\games\WarlordsGame.java|985|990|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+   Method End: getPlayerClass()Ljava/lang/String;
+   Method Start: getSpec()Ljava/lang/String;
+      @|lagg\games\WarlordsGame.java|1043|1050|getSpec|method|lagg.games.WarlordsGame|getSpec|()Ljava/lang/String;
+      @|lagg\games\WarlordsGame.java|1036|1042|String|class|java.lang.String
+      @|lagg\games\WarlordsGame.java|1099|1108|ArrayList|class|java.util.ArrayList
+      @|lagg\games\WarlordsGame.java|1109|1115|String|class|java.lang.String
+      @|lagg\games\WarlordsGame.java|1130|1134|Main|class|lagg.Main
+      @|lagg\games\WarlordsGame.java|1135|1148|getScoreboard|method|lagg.Main|getScoreboard|()Ljava/util/ArrayList;
+      @|lagg\games\WarlordsGame.java|1182|1186|size|method|java.util.Collection|size|()I
+      @|lagg\games\WarlordsGame.java|1200|1207|Matcher|class|java.util.regex.Matcher
+      @|lagg\games\WarlordsGame.java|1212|1219|Pattern|class|java.util.regex.Pattern
+      @|lagg\games\WarlordsGame.java|1220|1227|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      @|lagg\games\WarlordsGame.java|1249|1256|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      @|lagg\games\WarlordsGame.java|1268|1271|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|lagg\games\WarlordsGame.java|1285|1289|find|method|java.util.regex.Matcher|find|()Z
+      @|lagg\games\WarlordsGame.java|1308|1313|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+   Method End: getSpec()Ljava/lang/String;
+   Method Start: getLevel()I
+      @|lagg\games\WarlordsGame.java|1364|1372|getLevel|method|lagg.games.WarlordsGame|getLevel|()I
+      @|lagg\games\WarlordsGame.java|1379|1388|ArrayList|class|java.util.ArrayList
+      @|lagg\games\WarlordsGame.java|1389|1395|String|class|java.lang.String
+      @|lagg\games\WarlordsGame.java|1410|1414|Main|class|lagg.Main
+      @|lagg\games\WarlordsGame.java|1415|1428|getScoreboard|method|lagg.Main|getScoreboard|()Ljava/util/ArrayList;
+      @|lagg\games\WarlordsGame.java|1462|1466|size|method|java.util.Collection|size|()I
+      @|lagg\games\WarlordsGame.java|1480|1487|Matcher|class|java.util.regex.Matcher
+      @|lagg\games\WarlordsGame.java|1492|1499|Pattern|class|java.util.regex.Pattern
+      @|lagg\games\WarlordsGame.java|1500|1507|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      @|lagg\games\WarlordsGame.java|1548|1555|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      @|lagg\games\WarlordsGame.java|1567|1570|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|lagg\games\WarlordsGame.java|1584|1588|find|method|java.util.regex.Matcher|find|()Z
+      @|lagg\games\WarlordsGame.java|1605|1612|Integer|class|java.lang.Integer
+      @|lagg\games\WarlordsGame.java|1613|1621|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|lagg\games\WarlordsGame.java|1624|1629|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+   Method End: getLevel()I
+   Method Start: countAttack(Ljava/lang/String;)V
+      @|lagg\games\WarlordsGame.java|1674|1685|countAttack|method|lagg.games.WarlordsGame|countAttack|(Ljava/lang/String;)V
+      @|lagg\games\WarlordsGame.java|1686|1692|String|class|java.lang.String
+      @|lagg\games\WarlordsGame.java|1693|1700|message|param|lagg.games.WarlordsGame|countAttack|(Ljava/lang/String;)V|message|0
+      @|lagg\games\WarlordsGame.java|1706|1713|Matcher|class|java.util.regex.Matcher
+      @|lagg\games\WarlordsGame.java|1718|1725|Pattern|class|java.util.regex.Pattern
+      @|lagg\games\WarlordsGame.java|1726|1733|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      @|lagg\games\WarlordsGame.java|1975|1982|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      @|lagg\games\WarlordsGame.java|1983|1990|message|param|lagg.games.WarlordsGame|countAttack|(Ljava/lang/String;)V|message|0
+      @|lagg\games\WarlordsGame.java|2000|2004|find|method|java.util.regex.Matcher|find|()Z
+      @|lagg\games\WarlordsGame.java|2013|2016|log|field|lagg.games.WarlordsGame|log
+      @|lagg\games\WarlordsGame.java|2017|2020|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|lagg\games\WarlordsGame.java|2021|2028|message|param|lagg.games.WarlordsGame|countAttack|(Ljava/lang/String;)V|message|0
+      @|lagg\games\WarlordsGame.java|2039|2044|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\games\WarlordsGame.java|2048|2054|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|lagg\games\WarlordsGame.java|2077|2082|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\games\WarlordsGame.java|2086|2092|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|lagg\games\WarlordsGame.java|2113|2125|outputdamage|field|lagg.games.WarlordsGame|outputdamage
+      @|lagg\games\WarlordsGame.java|2127|2134|Integer|class|java.lang.Integer
+      @|lagg\games\WarlordsGame.java|2135|2143|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|lagg\games\WarlordsGame.java|2146|2151|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\games\WarlordsGame.java|2174|2179|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\games\WarlordsGame.java|2183|2189|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|lagg\games\WarlordsGame.java|2213|2226|outputhealing|field|lagg.games.WarlordsGame|outputhealing
+      @|lagg\games\WarlordsGame.java|2228|2235|Integer|class|java.lang.Integer
+      @|lagg\games\WarlordsGame.java|2236|2244|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|lagg\games\WarlordsGame.java|2247|2252|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\games\WarlordsGame.java|2277|2286|Minecraft|class|net.minecraft.client.Minecraft
+      @|lagg\games\WarlordsGame.java|2287|2299|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|lagg\games\WarlordsGame.java|2302|2311|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|lagg\games\WarlordsGame.java|2312|2326|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|lagg\games\WarlordsGame.java|2331|2348|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|lagg\games\WarlordsGame.java|2420|2425|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\games\WarlordsGame.java|2429|2435|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|lagg\games\WarlordsGame.java|2457|2462|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\games\WarlordsGame.java|2466|2472|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|lagg\games\WarlordsGame.java|2493|2504|damagetaken|field|lagg.games.WarlordsGame|damagetaken
+      @|lagg\games\WarlordsGame.java|2506|2513|Integer|class|java.lang.Integer
+      @|lagg\games\WarlordsGame.java|2514|2522|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|lagg\games\WarlordsGame.java|2525|2530|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\games\WarlordsGame.java|2553|2558|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\games\WarlordsGame.java|2562|2568|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|lagg\games\WarlordsGame.java|2592|2604|healingtaken|field|lagg.games.WarlordsGame|healingtaken
+      @|lagg\games\WarlordsGame.java|2606|2613|Integer|class|java.lang.Integer
+      @|lagg\games\WarlordsGame.java|2614|2622|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|lagg\games\WarlordsGame.java|2625|2630|group|method|java.util.regex.MatchResult|group|(I)Ljava/lang/String;
+      @|lagg\games\WarlordsGame.java|2654|2663|Minecraft|class|net.minecraft.client.Minecraft
+      @|lagg\games\WarlordsGame.java|2664|2676|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|lagg\games\WarlordsGame.java|2679|2688|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|lagg\games\WarlordsGame.java|2689|2703|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|lagg\games\WarlordsGame.java|2708|2725|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|lagg\games\WarlordsGame.java|2797|2806|Minecraft|class|net.minecraft.client.Minecraft
+      @|lagg\games\WarlordsGame.java|2807|2819|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|lagg\games\WarlordsGame.java|2822|2831|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|lagg\games\WarlordsGame.java|2832|2846|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|lagg\games\WarlordsGame.java|2851|2868|ChatComponentText|class|net.minecraft.util.ChatComponentText
+   Method End: countAttack(Ljava/lang/String;)V
+   Method Start: isCTF()Z
+      @|lagg\games\WarlordsGame.java|2946|2951|isCTF|method|lagg.games.WarlordsGame|isCTF|()Z
+      @|lagg\games\WarlordsGame.java|2961|2970|ArrayList|class|java.util.ArrayList
+      @|lagg\games\WarlordsGame.java|2971|2977|String|class|java.lang.String
+      @|lagg\games\WarlordsGame.java|2992|2996|Main|class|lagg.Main
+      @|lagg\games\WarlordsGame.java|2997|3010|getScoreboard|method|lagg.Main|getScoreboard|()Ljava/util/ArrayList;
+      @|lagg\games\WarlordsGame.java|3047|3051|size|method|java.util.Collection|size|()I
+      @|lagg\games\WarlordsGame.java|3077|3091|hasGameStarted|field|lagg.games.WarlordsGame|hasGameStarted
+      @|lagg\games\WarlordsGame.java|3106|3109|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|lagg\games\WarlordsGame.java|3113|3121|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|lagg\games\WarlordsGame.java|3153|3167|hasGameStarted|field|lagg.games.WarlordsGame|hasGameStarted
+      @|lagg\games\WarlordsGame.java|3171|3178|Pattern|class|java.util.regex.Pattern
+      @|lagg\games\WarlordsGame.java|3179|3186|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      @|lagg\games\WarlordsGame.java|3209|3216|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      @|lagg\games\WarlordsGame.java|3228|3231|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|lagg\games\WarlordsGame.java|3236|3240|find|method|java.util.regex.Matcher|find|()Z
+   Method End: isCTF()Z
+   Method Start: isTDM()Z
+      @|lagg\games\WarlordsGame.java|3336|3341|isTDM|method|lagg.games.WarlordsGame|isTDM|()Z
+      @|lagg\games\WarlordsGame.java|3354|3359|isCTF|method|lagg.games.WarlordsGame|isCTF|()Z
+      @|lagg\games\WarlordsGame.java|3397|3406|ArrayList|class|java.util.ArrayList
+      @|lagg\games\WarlordsGame.java|3407|3413|String|class|java.lang.String
+      @|lagg\games\WarlordsGame.java|3428|3432|Main|class|lagg.Main
+      @|lagg\games\WarlordsGame.java|3433|3446|getScoreboard|method|lagg.Main|getScoreboard|()Ljava/util/ArrayList;
+      @|lagg\games\WarlordsGame.java|3483|3487|size|method|java.util.Collection|size|()I
+      @|lagg\games\WarlordsGame.java|3513|3527|hasGameStarted|field|lagg.games.WarlordsGame|hasGameStarted
+      @|lagg\games\WarlordsGame.java|3531|3538|Pattern|class|java.util.regex.Pattern
+      @|lagg\games\WarlordsGame.java|3539|3546|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      @|lagg\games\WarlordsGame.java|3571|3578|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      @|lagg\games\WarlordsGame.java|3590|3593|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|lagg\games\WarlordsGame.java|3598|3602|find|method|java.util.regex.Matcher|find|()Z
+      @|lagg\games\WarlordsGame.java|3616|3630|hasGameStarted|field|lagg.games.WarlordsGame|hasGameStarted
+      @|lagg\games\WarlordsGame.java|3634|3641|Pattern|class|java.util.regex.Pattern
+      @|lagg\games\WarlordsGame.java|3642|3649|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      @|lagg\games\WarlordsGame.java|3672|3679|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      @|lagg\games\WarlordsGame.java|3691|3694|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|lagg\games\WarlordsGame.java|3699|3703|find|method|java.util.regex.Matcher|find|()Z
+   Method End: isTDM()Z
+   Method Start: isDom()Z
+      @|lagg\games\WarlordsGame.java|3794|3799|isDom|method|lagg.games.WarlordsGame|isDom|()Z
+      @|lagg\games\WarlordsGame.java|3813|3818|isCTF|method|lagg.games.WarlordsGame|isCTF|()Z
+      @|lagg\games\WarlordsGame.java|3825|3830|isTDM|method|lagg.games.WarlordsGame|isTDM|()Z
+   Method End: isDom()Z
+   Method Start: getGameType()Ljava/lang/String;
+      @|lagg\games\WarlordsGame.java|3910|3921|getGameType|method|lagg.games.WarlordsGame|getGameType|()Ljava/lang/String;
+      @|lagg\games\WarlordsGame.java|3903|3909|String|class|java.lang.String
+      @|lagg\games\WarlordsGame.java|3934|3939|isCTF|method|lagg.games.WarlordsGame|isCTF|()Z
+      @|lagg\games\WarlordsGame.java|3981|3986|isTDM|method|lagg.games.WarlordsGame|isTDM|()Z
+   Method End: getGameType()Ljava/lang/String;
+Class End  : lagg.games.WarlordsGame
+endProcessing lagg\games\WarlordsGame.java
+

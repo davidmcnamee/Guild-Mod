@@ -1,0 +1,14 @@
+Symbol range map extraction starting
+Processing 12 files
+processing lagg\ApiRequests.java
+processing lagg\Command.java
+processing lagg\Game.java
+processing lagg\LoadScoreboard.java
+processing lagg\LoadTab.java
+processing lagg\Main.java
+processing lagg\Player.java
+processing lagg\URLConnectionReader.java
+processing lagg\games\MegaWallsGame.java
+processing lagg\games\SmashHeroesGame.java
+processing lagg\games\TKRGame.java
+processing lagg\games\WarlordsGame.java
